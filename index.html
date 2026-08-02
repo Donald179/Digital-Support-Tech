@@ -1,0 +1,2091 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<!-- ============================================================
+     DIGITAL SUPPORT TECH — Site officiel
+     Architecture : Single Page Application (routeur hash) SEO optimisé
+     Technologies : HTML5, CSS3, Bootstrap 5, JavaScript ES6
+     ============================================================ -->
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<!-- ============ SEO PRIMAIRE ============ -->
+<title>Digital Support Tech — Support technique & maintenance informatique</title>
+<meta name="description" content="Digital Support Tech : expert en support technique, dépannage Windows, installation Office & antivirus, optimisation PC, suppression de virus, sauvegarde et récupération de données. Sur place ou à distance, 24h/7j.">
+<meta name="keywords" content="support technique, maintenance informatique, dépannage windows, installation windows, microsoft office, antivirus, optimisation pc, suppression virus, récupération de données, assistance informatique à distance">
+<meta name="author" content="Digital Support Tech">
+<meta name="robots" content="index, follow">
+<meta name="theme-color" content="#0057D9">
+<link rel="canonical" href="https://www.digitalsupporttech.fr/">
+
+<!-- ============ OPEN GRAPH / RÉSEAUX SOCIAUX ============ -->
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Digital Support Tech">
+<meta property="og:title" content="Digital Support Tech — Votre expert en support technique et maintenance informatique">
+<meta property="og:description" content="Nous diagnostiquons, réparons et optimisons votre ordinateur rapidement, sur place ou à distance. +100 PC réparés, 98% de satisfaction.">
+<meta property="og:url" content="https://www.digitalsupporttech.fr/">
+<meta property="og:image" content="https://images.pexels.com/photos/10558599/pexels-photo-10558599.jpeg?auto=compress&cs=tinysrgb&fit=crop&h=627&w=1200">
+<meta property="og:locale" content="fr_FR">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Digital Support Tech — Support technique & maintenance informatique">
+<meta name="twitter:description" content="Diagnostic, réparation et optimisation de votre ordinateur, sur place ou à distance.">
+<meta name="twitter:image" content="https://images.pexels.com/photos/10558599/pexels-photo-10558599.jpeg?auto=compress&cs=tinysrgb&fit=crop&h=627&w=1200">
+
+<!-- ============ FAVICON (SVG inline) ============ -->
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%230057D9'/%3E%3Crect x='16' y='16' width='13' height='13' rx='2' fill='%23fff'/%3E%3Crect x='35' y='16' width='13' height='13' rx='2' fill='%232EA8FF'/%3E%3Crect x='16' y='35' width='13' height='13' rx='2' fill='%232EA8FF'/%3E%3Crect x='35' y='35' width='13' height='13' rx='2' fill='%23fff'/%3E%3C/svg%3E">
+
+<!-- ============ DONNÉES STRUCTURÉES SCHEMA.ORG ============ -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "ProfessionalService",
+  "name": "Digital Support Tech",
+  "image": "https://www.digitalsupporttech.fr/logo.png",
+  "url": "https://www.digitalsupporttech.fr/",
+  "telephone": "+226 55 75 72 99",
+  "email": "contact@digitalsupporttech.fr",
+  "priceRange": "€€",
+  "description": "Support technique, maintenance informatique, dépannage Windows, installation Microsoft Office, antivirus, optimisation PC, suppression de virus, sauvegarde et récupération de données, assistance à distance.",
+  "address": { "@type": "PostalAddress", "addressLocality": "Paris", "addressCountry": "FR" },
+  "geo": { "@type": "GeoCoordinates", "latitude": 48.8566, "longitude": 2.3522 },
+  "openingHoursSpecification": [
+    { "@type": "OpeningHoursSpecification", "dayOfWeek": ["Monday","Tuesday","Wednesday","Thursday","Friday"], "opens": "09:00", "closes": "19:00" },
+    { "@type": "OpeningHoursSpecification", "dayOfWeek": "Saturday", "opens": "10:00", "closes": "17:00" }
+  ],
+  "aggregateRating": { "@type": "AggregateRating", "ratingValue": "4.9", "reviewCount": "214" },
+  "sameAs": [
+    "https://www.facebook.com/digitalsupporttech",
+    "https://www.linkedin.com/company/digitalsupporttech",
+    "https://www.instagram.com/digitalsupporttech"
+  ]
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {"@type":"Question","name":"Intervenez-vous à distance ?","acceptedAnswer":{"@type":"Answer","text":"Oui, grâce à AnyDesk ou UltraViewer, nous prenons en main votre ordinateur en toute sécurité pour un dépannage rapide, où que vous soyez."}},
+    {"@type":"Question","name":"Combien de temps dure un dépannage ?","acceptedAnswer":{"@type":"Answer","text":"La plupart des dépannages à distance sont résolus en moins d'une heure. Une intervention sur site peut prendre de 1 à 3 heures selon la complexité."}},
+    {"@type":"Question","name":"Récupérez-vous mes données si mon disque dur est endommagé ?","acceptedAnswer":{"@type":"Answer","text":"Oui, notre service de récupération de données intervient sur les disques défaillants, supprimés accidentellement ou formatés. Le devis est gratuit."}},
+    {"@type":"Question","name":"Mes données sont-elles en sécurité pendant une assistance à distance ?","acceptedAnswer":{"@type":"Answer","text":"Absolument. Les sessions sont chiffrées de bout en bout, nous ne demandons jamais vos mots de passe et vous gardez le contrôle de la session."}}
+  ]
+}
+</script>
+
+<!-- ============ POLICES ============ -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;100;600;700&family=Sora:wght@400;100;600;700;800&display=swap" rel="stylesheet">
+
+<!-- ============ BOOTSTRAP 5 + ICÔNES ============ -->
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+
+<style>
+/* ============================================================
+   DESIGN SYSTEM — DIGITAL SUPPORT TECH
+   ============================================================ */
+:root{
+  --primary:#0057D9;
+  --primary-light:#2EA8FF;
+  --primary-dark:#0A2D6B;
+  --ink:#0B1B33;
+  --muted:#5B6B85;
+  --bg-soft:#F4F7FB;
+  --line:#E4EBF5;
+  --grad:linear-gradient(135deg,#0057D9 0%,#2EA8FF 100%);
+  --grad-dark:linear-gradient(135deg,#0A2D6B 0%,#0057D9 100%);
+  --radius:18px;
+  --radius-lg:26px;
+  --shadow-sm:0 4px 14px rgba(10,45,107,.08);
+  --shadow:0 12px 40px rgba(10,45,107,.12);
+  --shadow-lg:0 24px 70px rgba(10,45,107,.20);
+}
+html{scroll-behavior:smooth}
+body{
+  font-family:'Inter',system-ui,sans-serif;
+  color:var(--ink);
+  background:#fff;
+  overflow-x:hidden;
+}
+h1,h2,h3,h4,h5,.font-display{font-family:'Sora',sans-serif}
+a{text-decoration:none}
+::selection{background:var(--primary);color:#fff}
+
+/* Barre de défilement personnalisée */
+::-webkit-scrollbar{width:10px}
+::-webkit-scrollbar-track{background:var(--bg-soft)}
+::-webkit-scrollbar-thumb{background:linear-gradient(var(--primary),var(--primary-light));border-radius:8px}
+
+/* Accessibilité : focus visible */
+a:focus-visible,button:focus-visible,input:focus-visible,textarea:focus-visible,select:focus-visible{
+  outline:3px solid rgba(46,168,255,.6);outline-offset:2px;border-radius:6px;
+}
+.skip-link{
+  position:absolute;left:-999px;top:0;background:var(--primary);color:#fff;padding:.6rem 1rem;
+  z-index:9999;border-radius:0 0 8px 0;
+}
+.skip-link:focus{left:0;color:#fff}
+
+/* ============ BOUTONS ============ */
+.btn-brand{
+  background:var(--grad);color:#fff;border:none;border-radius:14px;
+  padding:.85rem 1.7rem;font-weight:600;font-family:'Sora',sans-serif;
+  box-shadow:0 10px 24px rgba(0,87,217,.35);
+  transition:all .3s ease;position:relative;overflow:hidden;
+}
+.btn-brand:hover{color:#fff;transform:translateY(-3px);box-shadow:0 16px 34px rgba(0,87,217,.45)}
+.btn-brand::after{
+  content:"";position:absolute;top:0;left:-80%;width:50%;height:100%;
+  background:linear-gradient(120deg,transparent,rgba(255,255,255,.35),transparent);
+  transform:skewX(-20deg);transition:left .6s ease;
+}
+.btn-brand:hover::after{left:130%}
+.btn-ghost{
+  background:rgba(255,255,255,.12);color:#fff;border:1px solid rgba(255,255,255,.35);
+  border-radius:14px;padding:.85rem 1.7rem;font-weight:600;font-family:'Sora',sans-serif;
+  backdrop-filter:blur(8px);transition:all .3s ease;
+}
+.btn-ghost:hover{background:rgba(255,255,255,.22);color:#fff;transform:translateY(-3px)}
+.btn-outline-brand{
+  background:transparent;color:var(--primary);border:2px solid var(--primary);
+  border-radius:14px;padding:.8rem 1.6rem;font-weight:600;font-family:'Sora',sans-serif;transition:all .3s ease;
+}
+.btn-outline-brand:hover{background:var(--primary);color:#fff;transform:translateY(-3px);box-shadow:0 12px 26px rgba(0,87,217,.3)}
+.btn-wa{
+  background:#25D366;color:#fff;border:none;border-radius:14px;padding:.85rem 1.6rem;
+  font-weight:600;font-family:'Sora',sans-serif;transition:all .3s ease;
+}
+.btn-wa:hover{background:#1eb958;color:#fff;transform:translateY(-3px)}
+
+/* ============ NAVBAR ============ */
+.navbar-dst{
+  position:fixed;top:0;left:0;right:0;z-index:1030;font-weight: 00;
+  background:rgba(255,255,255,.82);backdrop-filter:blur(18px);-webkit-backdrop-filter:blur(18px);
+  transition:box-shadow .3s ease,background .3s ease;padding:.9rem 0;
+}
+.navbar-dst.scrolled{background:rgba(255,255,255,.95);box-shadow:0 8px 30px rgba(10,45,107,.10)}
+.navbar-dst .nav-link{
+  color:var(--ink);font-weight:500;font-size:.95rem;margin:0 .35rem;padding:.5rem .75rem;
+  border-radius:10px;transition:all .25s ease;position:relative;
+}
+.navbar-dst .nav-link:hover{color:var(--primary);background:rgba(0,87,217,.06)}
+.navbar-dst .nav-link.active{color:var(--primary);font-weight:600}
+.navbar-dst .nav-link.active::after{
+  content:"";position:absolute;bottom:2px;left:50%;transform:translateX(-50%);
+  width:22px;height:3px;border-radius:3px;background:var(--grad);
+}
+.brand-logo{display:flex;align-items:center;gap:.6rem}
+.brand-logo .logo-mark img{
+  width:42px;height:42px;border-radius:12px;
+  display:grid;place-items:center;color:#fff;font-size:1.25rem;font-weight:800;
+  font-family:'Sora',sans-serif;
+}
+.brand-logo .brand-name{font-family:'Sora',sans-serif;font-weight:700;color:var(--ink);line-height:1.1}
+.brand-logo .brand-name small{display:block;font-size:.62rem;font-weight:600;color:var(--primary);letter-spacing:.14em;text-transform:uppercase}
+.navbar-toggler{border:none;color:var(--primary);font-size:1.6rem}
+.navbar-toggler:focus{box-shadow:none}
+
+/* ============ PAGES (routeur) ============ */
+.page{display:none}
+.page.active{display:block;animation:pageIn .5s ease both}
+@keyframes pageIn{from{opacity:0;transform:translateY(14px)}to{opacity:1;transform:none}}
+
+/* ============ HERO ============ */
+.hero{
+  position:relative;min-height:100vh;display:flex;align-items:center;
+  padding:9rem 0 6rem;overflow:hidden;
+  background:radial-gradient(1200px 600px at 85% -10%,rgba(46,168,255,.35),transparent 60%),
+             radial-gradient(900px 100px at -10% 110%,rgba(46,168,255,.25),transparent 60%),
+             linear-gradient(160deg,var(--primary-dark) 0%,var(--primary) 70%,#006BE8 100%);
+}
+.hero::before{ /* grille technique */
+  content:"";position:absolute;inset:0;opacity:.14;pointer-events:none;
+  background-image:linear-gradient(rgba(255,255,255,.5) 1px,transparent 1px),
+                   linear-gradient(90deg,rgba(255,255,255,.5) 1px,transparent 1px);
+  background-size:56px 56px;
+  mask-image:radial-gradient(ellipse at center,black 30%,transparent 75%);
+  -webkit-mask-image:radial-gradient(ellipse at center,black 30%,transparent 75%);
+}
+.blob{position:absolute;border-radius:50%;filter:blur(70px);opacity:.5;pointer-events:none;animation:floatBlob 12s ease-in-out infinite}
+.blob.b1{width:420px;height:420px;background:#2EA8FF;top:-120px;right:-80px}
+.blob.b2{width:340px;height:340px;background:#0A2D6B;bottom:-100px;left:-100px;animation-delay:-4s}
+.blob.b3{width:220px;height:220px;background:#7FD1FF;top:40%;left:55%;animation-delay:-8s}
+@keyframes floatBlob{0%,100%{transform:translate(0,0) scale(1)}50%{transform:translate(30px,-30px) scale(1.1)}}
+
+.hero .badge-live{
+  display:inline-flex;align-items:center;gap:.5rem;background:rgba(255,255,255,.12);
+  border:1px solid rgba(255,255,255,.25);color:#fff;border-radius:100px;
+  padding:.45rem 1rem;font-size:.8rem;font-weight:600;backdrop-filter:blur(8px);
+}
+.pulse-dot{width:9px;height:9px;border-radius:50%;background:#2EE6A8;position:relative}
+.pulse-dot::after{content:"";position:absolute;inset:-4px;border-radius:50%;border:2px solid #2EE6A8;animation:pulse 1.8s ease-out infinite}
+@keyframes pulse{0%{transform:scale(.5);opacity:1}100%{transform:scale(1.6);opacity:0}}
+.hero h1{color:#fff;font-weight:800;font-size:clamp(2.1rem,4.4vw,3.6rem);line-height:1.14;letter-spacing:-.02em}
+.hero .grad-text{background:linear-gradient(90deg,#8FD0FF,#2EA8FF,#7FD1FF);-webkit-background-clip:text;background-clip:text;-webkit-text-fill-color:transparent}
+.hero p.lead{color:rgba(255,255,255,.82);font-size:1.15rem;max-width:560px}
+.hero-points{display:flex;flex-wrap:wrap;gap:.75rem;margin-top:1.2rem}
+.hero-points span{display:inline-flex;align-items:center;gap:.45rem;color:rgba(255,255,255,.9);font-size:.9rem;font-weight:100}
+.hero-points i{color:#7FD1FF}
+
+/* Illustration hero */
+.hero-visual{position:relative;z-index:2}
+.hero-visual .orbit-svg{position:absolute;inset:0;width:100%;height:100%;pointer-events:none}
+.hero-screen{
+  position:relative;background:rgba(255,255,255,.10);border:1px solid rgba(255,255,255,.25);
+  border-radius:22px;backdrop-filter:blur(16px);-webkit-backdrop-filter:blur(16px);
+  padding:1.4rem;box-shadow:0 30px 80px rgba(2,20,60,.5);animation:floatY 6s ease-in-out infinite;
+}
+@keyframes floatY{0%,100%{transform:translateY(0)}50%{transform:translateY(-14px)}}
+.hero-screen .screen-top{display:flex;gap:.4rem;margin-bottom:1rem}
+.hero-screen .screen-top i{width:10px;height:10px;border-radius:50%;display:block}
+.hero-screen .mock-window{
+  background:rgba(255,255,255,.95);border-radius:14px;overflow:hidden;box-shadow:0 14px 40px rgba(0,10,40,.35);
+}
+.mock-bar{display:flex;align-items:center;gap:.5rem;padding:.6rem .9rem;background:#F1F5FB;border-bottom:1px solid #E4EBF5}
+.mock-bar span{width:8px;height:8px;border-radius:50%}
+.mock-body{padding:1.2rem}
+.mock-body .win-logo{display:flex;gap:.5rem;justify-content:center;margin-bottom:1rem}
+.mock-body .win-logo i{width:22px;height:22px;border-radius:4px}
+.mock-line{height:8px;border-radius:6px;background:#E4EBF5;margin:.55rem 0}
+.mock-line.l2{width:78%}
+.mock-line.l3{width:58%}
+.mock-btn{width:45%;height:20px;border-radius:6px;background:var(--grad);margin-top:.8rem}
+.float-card{
+  position:absolute;background:rgba(255,255,255,.92);backdrop-filter:blur(12px);
+  border-radius:14px;padding:.65rem .9rem;display:flex;align-items:center;gap:.6rem;
+  box-shadow:0 16px 40px rgba(2,20,60,.35);font-size:.82rem;font-weight:600;color:var(--ink);
+  animation:floatY 5s ease-in-out infinite;
+}
+.float-card i{font-size:1.15rem}
+.float-card.fc1{top:6%;left:-6%;animation-delay:-1s}
+.float-card.fc2{bottom:12%;right:-8%;animation-delay:-2.5s}
+.float-card.fc3{bottom:-6%;left:12%;animation-delay:-4s}
+.icon-orb{
+  position:absolute;width:58px;height:58px;border-radius:50%;
+  background:rgba(255,255,255,.14);border:1px solid rgba(255,255,255,.3);
+  backdrop-filter:blur(10px);display:grid;place-items:center;color:#fff;font-size:1.35rem;
+  box-shadow:0 12px 30px rgba(2,20,60,.35);animation:floatY 7s ease-in-out infinite;z-index:3;
+}
+.icon-orb.io1{top:-4%;left:-12%}
+.icon-orb.io2{top:2%;right:-14%;animation-delay:-2s}
+.icon-orb.io3{bottom:20%;left:-16%;animation-delay:-3.5s}
+.icon-orb.io4{bottom:-8%;right:4%;animation-delay:-5s}
+
+/* ============ STATS ============ */
+.stats-band{margin-top:-64px;position:relative;z-index:5}
+.stat-card{
+  background:rgba(255,255,255,.9);backdrop-filter:blur(14px);border:1px solid rgba(255,255,255,.6);
+  border-radius:var(--radius-lg);padding:1.6rem 1.2rem;text-align:center;box-shadow:var(--shadow);
+  transition:transform .3s ease,box-shadow .3s ease;height:100%;
+}
+.stat-card:hover{transform:translateY(-6px);box-shadow:var(--shadow-lg)}
+.stat-card .num{font-family:'Sora',sans-serif;font-weight:800;font-size:2.2rem;color:var(--primary-dark);line-height:1}
+.stat-card .num .suffix{color:var(--primary-light)}
+.stat-card .lbl{color:var(--muted);font-size:.85rem;font-weight:100;margin-top:.4rem}
+
+/* ============ SECTIONS GÉNÉRIQUES ============ */
+.section{padding:5.5rem 0}
+.section-soft{background:var(--bg-soft)}
+.eyebrow{
+  display:inline-flex;align-items:center;gap:.45rem;font-family:'Sora',sans-serif;font-weight:600;
+  font-size:.78rem;letter-spacing:.12em;text-transform:uppercase;color:var(--primary);
+  background:rgba(0,87,217,.08);padding:.4rem .95rem;border-radius:100px;margin-bottom:1rem;
+}
+.sec-title{font-weight:700;letter-spacing:-.02em;margin-bottom:.9rem}
+.sec-sub{color:var(--muted);max-width:640px}
+.text-gradient{background:var(--grad);-webkit-background-clip:text;background-clip:text;-webkit-text-fill-color:transparent}
+
+/* ============ CARTES SERVICES ============ */
+.service-card{
+  background:#fff;border:1px solid var(--line);border-radius:var(--radius-lg);
+  padding:1.8rem;height:100%;position:relative;overflow:hidden;transition:all .35s ease;
+}
+.service-card::before{
+  content:"";position:absolute;top:0;left:0;right:0;height:4px;
+  background:var(--grad);transform:scaleX(0);transform-origin:left;transition:transform .4s ease;
+}
+.service-card:hover{transform:translateY(-8px);box-shadow:var(--shadow-lg);border-color:transparent}
+.service-card:hover::before{transform:scaleX(1)}
+.service-icon{
+  width:62px;height:62px;border-radius:16px;background:var(--grad);color:#fff;
+  display:grid;place-items:center;font-size:1.7rem;margin-bottom:1.2rem;
+  box-shadow:0 10px 24px rgba(0,87,217,.32);transition:transform .35s ease;
+}
+.service-card:hover .service-icon{transform:scale(1.08) rotate(-4deg)}
+.service-card h3{font-size:1.12rem;font-weight:700}
+.service-card .benefits{list-style:none;padding:0;margin:.9rem 0 1.2rem}
+.service-card .benefits li{display:flex;gap:.5rem;font-size:.86rem;color:var(--muted);margin:.35rem 0}
+.service-card .benefits i{color:#0FA968}
+
+/* ============ COMMENT ÇA MARCHE ============ */
+.step-card{text-align:center;padding:1.6rem 1.2rem;position:relative}
+.step-num{
+  width:64px;height:64px;margin:0 auto 1rem;border-radius:20px;background:#fff;
+  border:2px solid var(--line);display:grid;place-items:center;font-family:'Sora',sans-serif;
+  font-weight:800;font-size:1.3rem;color:var(--primary);box-shadow:var(--shadow-sm);transition:all .3s ease;
+}
+.step-card:hover .step-num{background:var(--grad);color:#fff;border-color:transparent;transform:translateY(-5px) rotate(-4deg);box-shadow:0 14px 30px rgba(0,87,217,.35)}
+.step-card p{color:var(--muted);font-size:.9rem}
+.step-connector{position:absolute;top:48px;left:calc(50% + 40px);width:calc(100% - 80px);height:2px;background:repeating-linear-gradient(90deg,var(--primary-light) 0 8px,transparent 8px 16px);opacity:.4}
+
+/* ============ ATOUTS ============ */
+.feature-card{
+  display:flex;gap:1rem;background:#fff;border:1px solid var(--line);border-radius:var(--radius);
+  padding:1.3rem;height:100%;transition:all .3s ease;
+}
+.feature-card:hover{transform:translateY(-5px);box-shadow:var(--shadow);border-color:rgba(0,87,217,.25)}
+.feature-card .f-icon{flex:0 0 48px;width:48px;height:48px;border-radius:14px;background:rgba(0,87,217,.09);color:var(--primary);display:grid;place-items:center;font-size:1.35rem}
+.feature-card h4{font-size:1rem;font-weight:700;margin-bottom:.25rem}
+.feature-card p{font-size:.86rem;color:var(--muted);margin:0}
+
+/* ============ TÉMOIGNAGES ============ */
+.testi-card{
+  background:#fff;border:1px solid var(--line);border-radius:var(--radius-lg);
+  padding:1.7rem;height:100%;transition:all .3s ease;position:relative;
+}
+.testi-card:hover{transform:translateY(-6px);box-shadow:var(--shadow-lg)}
+.testi-card .stars{color:#FFB020;font-size:.95rem}
+.testi-card p.quote{font-size:.95rem;color:#33415C;margin:1rem 0}
+.testi-avatar{width:46px;height:46px;border-radius:50%;display:grid;place-items:center;font-weight:700;color:#fff;font-family:'Sora',sans-serif}
+
+/* ============ CTA BANDEAU ============ */
+.cta-band{
+  position:relative;border-radius:var(--radius-lg);overflow:hidden;padding:3.5rem 2.5rem;
+  background:var(--grad-dark);color:#fff;box-shadow:var(--shadow-lg);
+}
+.cta-band::before{content:"";position:absolute;inset:0;background-image:linear-gradient(rgba(255,255,255,.12) 1px,transparent 1px),linear-gradient(90deg,rgba(255,255,255,.12) 1px,transparent 1px);background-size:44px 44px;opacity:.35}
+.cta-band h2{color:#fff;position:relative}
+.cta-band p{color:rgba(255,255,255,.85);position:relative}
+
+/* ============ HEADER DE PAGE INTERNE ============ */
+.page-hero{
+  position:relative;padding:9rem 0 4.5rem;overflow:hidden;color:#fff;
+  background:radial-gradient(800px 400px at 90% 0%,rgba(46,168,255,.4),transparent 60%),var(--grad-dark);
+}
+.page-hero::before{content:"";position:absolute;inset:0;background-image:linear-gradient(rgba(255,255,255,.1) 1px,transparent 1px),linear-gradient(90deg,rgba(255,255,255,.1) 1px,transparent 1px);background-size:48px 48px;opacity:.25}
+.page-hero h1{font-weight:800;font-size:clamp(1.8rem,3.4vw,2.7rem);position:relative}
+.page-hero .crumb{color:rgba(255,255,255,.7);font-size:.85rem;position:relative}
+.page-hero .crumb a{color:rgba(255,255,255,.85)}
+.page-hero .crumb a:hover{color:#fff}
+
+/* ============ DIAGNOSTIC ============ */
+.diag-card{
+  background:#fff;border:1px solid var(--line);border-radius:var(--radius);
+  padding:1.5rem 1rem;text-align:center;cursor:pointer;height:100%;
+  transition:all .3s ease;position:relative;overflow:hidden;
+}
+.diag-card:hover{transform:translateY(-6px);box-shadow:var(--shadow-lg);border-color:rgba(0,87,217,.35)}
+.diag-card .emoji{font-size:2.2rem;display:block;margin-bottom:.6rem;transition:transform .3s ease}
+.diag-card:hover .emoji{transform:scale(1.2)}
+.diag-card .d-label{font-weight:600;font-size:.92rem;font-family:'Sora',sans-serif}
+.diag-panel{background:#fff;border:1px solid var(--line);border-radius:var(--radius-lg);padding:2rem;box-shadow:var(--shadow)}
+.progress-dst{height:8px;border-radius:8px;background:#E4EBF5}
+.progress-dst .progress-bar{background:var(--grad);border-radius:8px;transition:width .5s ease}
+.check-step{
+  display:flex;gap:.9rem;background:var(--bg-soft);border:1px solid var(--line);
+  border-radius:var(--radius);padding:1.1rem 1.2rem;margin-bottom:.9rem;
+}
+.check-step .cs-icon{flex:0 0 44px;width:44px;height:44px;border-radius:12px;background:#fff;display:grid;place-items:center;font-size:1.3rem;box-shadow:var(--shadow-sm)}
+.check-step h4{font-size:.98rem;font-weight:700;margin-bottom:.25rem}
+.check-step p{font-size:.87rem;color:var(--muted);margin:0}
+.result-list{list-style:none;padding:0;margin:0}
+.result-list li{display:flex;gap:.7rem;font-size:.9rem;padding:.55rem 0;border-bottom:1px dashed var(--line)}
+.result-list li:last-child{border-bottom:none}
+.result-list i{color:var(--primary)}
+.result-list.sol li i{color:#0FA968}
+
+/* ============ GUIDES ============ */
+.guide-card{
+  background:#fff;border:1px solid var(--line);border-radius:var(--radius);padding:1.4rem;
+  height:100%;transition:all .3s ease;display:flex;flex-direction:column;gap:.6rem;
+}
+.guide-card:hover{transform:translateY(-6px);box-shadow:var(--shadow-lg);border-color:rgba(0,87,217,.3)}
+.guide-card .g-icon{width:50px;height:50px;border-radius:14px;background:rgba(0,87,217,.09);color:var(--primary);display:grid;place-items:center;font-size:1.4rem}
+.guide-card h3{font-size:1.02rem;font-weight:700;margin:0}
+.guide-card p{font-size:.86rem;color:var(--muted);margin:0;flex:1}
+.guide-card .meta{font-size:.78rem;color:var(--muted);display:flex;gap:.8rem}
+.chip{
+  display:inline-block;font-size:.72rem;font-weight:600;padding:.28rem .7rem;border-radius:100px;
+  background:rgba(0,87,217,.09);color:var(--primary);font-family:'Sora',sans-serif;
+}
+.chip.active{background:var(--grad);color:#fff}
+.search-box{
+  position:relative;max-width:520px;
+}
+.search-box i{position:absolute;left:1rem;top:50%;transform:translateY(-50%);color:var(--muted)}
+.search-box input{
+  width:100%;border:1px solid var(--line);border-radius:100px;padding:.9rem 1rem .9rem 2.9rem;
+  font-size:.95rem;background:#fff;transition:all .3s ease;
+}
+.search-box input:focus{outline:none;border-color:var(--primary);box-shadow:0 0 0 4px rgba(0,87,217,.12)}
+
+/* ============ BLOG ============ */
+.blog-card{
+  background:#fff;border:1px solid var(--line);border-radius:var(--radius-lg);overflow:hidden;
+  height:100%;display:flex;flex-direction:column;transition:all .35s ease;
+}
+.blog-card:hover{transform:translateY(-8px);box-shadow:var(--shadow-lg)}
+.blog-card .thumb{position:relative;overflow:hidden;aspect-ratio:16/9}
+.blog-card .thumb img{width:100%;height:100%;object-fit:cover;transition:transform .6s ease}
+.blog-card:hover .thumb img{transform:scale(1.08)}
+.blog-card .cat-badge{
+  position:absolute;top:.9rem;left:.9rem;background:rgba(255,255,255,.92);backdrop-filter:blur(6px);
+  color:var(--primary);font-size:.72rem;font-weight:700;font-family:'Sora',sans-serif;
+  padding:.3rem .75rem;border-radius:100px;box-shadow:var(--shadow-sm);
+}
+.blog-card .body{padding:1.4rem;display:flex;flex-direction:column;flex:1}
+.blog-card h3{font-size:1.08rem;font-weight:700;line-height:1.35}
+.blog-card h3 a{color:var(--ink)}
+.blog-card h3 a:hover{color:var(--primary)}
+.blog-card p{font-size:.88rem;color:var(--muted);flex:1}
+.blog-card .meta{display:flex;gap:1rem;font-size:.78rem;color:var(--muted);margin-top:.8rem}
+.pagination-dst .page-link{border:none;color:var(--primary);border-radius:10px;margin:0 .2rem;font-weight:600;width:42px;height:42px;display:grid;place-items:center;box-shadow:var(--shadow-sm)}
+.pagination-dst .page-item.active .page-link{background:var(--grad);color:#fff}
+.side-widget{background:#fff;border:1px solid var(--line);border-radius:var(--radius);padding:1.4rem;margin-bottom:1.4rem}
+.side-widget h4{font-size:.95rem;font-weight:700;text-transform:uppercase;letter-spacing:.06em;margin-bottom:1rem}
+.pop-item{display:flex;gap:.8rem;padding:.55rem 0;align-items:center}
+.pop-item img{width:62px;height:48px;object-fit:cover;border-radius:10px;flex-shrink:0}
+.pop-item .t{font-size:.83rem;font-weight:600;line-height:1.3}
+.pop-item .d{font-size:.72rem;color:var(--muted)}
+
+/* ============ TÉLÉCHARGEMENTS ============ */
+.dl-card{
+  background:#fff;border:1px solid var(--line);border-radius:var(--radius);padding:1.4rem;
+  height:100%;display:flex;flex-direction:column;gap:.5rem;transition:all .3s ease;
+}
+.dl-card:hover{transform:translateY(-6px);box-shadow:var(--shadow-lg);border-color:rgba(0,87,217,.3)}
+.dl-card .dl-head{display:flex;align-items:center;gap:.9rem}
+.dl-card .dl-icon{width:52px;height:52px;border-radius:14px;display:grid;place-items:center;font-size:1.5rem;color:#fff;flex-shrink:0}
+.dl-card h3{font-size:1rem;font-weight:700;margin:0}
+.dl-card .ver{font-size:.75rem;color:var(--muted)}
+.dl-card p{font-size:.85rem;color:var(--muted);flex:1;margin:0}
+.dl-badge{font-size:.7rem;font-weight:700;font-family:'Sora',sans-serif;background:rgba(0,87,217,.08);color:var(--primary);padding:.22rem .6rem;border-radius:100px;width:fit-content}
+
+/* ============ FAQ ============ */
+.accordion-dst .accordion-item{border:1px solid var(--line);border-radius:var(--radius)!important;margin-bottom:.9rem;overflow:hidden;box-shadow:var(--shadow-sm)}
+.accordion-dst .accordion-button{
+  font-family:'Sora',sans-serif;font-weight:600;font-size:.98rem;color:var(--ink);
+  padding:1.15rem 1.3rem;background:#fff;
+}
+.accordion-dst .accordion-button:not(.collapsed){background:rgba(0,87,217,.05);color:var(--primary);box-shadow:none}
+.accordion-dst .accordion-button:focus{box-shadow:none;border-color:var(--line)}
+.accordion-dst .accordion-body{color:var(--muted);font-size:.92rem;padding:0 1.3rem 1.2rem}
+
+/* ============ À PROPOS ============ */
+.value-card{background:#fff;border:1px solid var(--line);border-radius:var(--radius-lg);padding:1.8rem;height:100%;transition:all .3s ease;text-align:center}
+.value-card:hover{transform:translateY(-6px);box-shadow:var(--shadow-lg)}
+.value-card .v-icon{width:60px;height:60px;margin:0 auto 1rem;border-radius:18px;background:var(--grad);color:#fff;display:grid;place-items:center;font-size:1.6rem;box-shadow:0 10px 24px rgba(0,87,217,.3)}
+.value-card h3{font-size:1.05rem;font-weight:700}
+.value-card p{font-size:.88rem;color:var(--muted)}
+.timeline{position:relative;padding-left:2rem}
+.timeline::before{content:"";position:absolute;left:8px;top:6px;bottom:6px;width:2px;background:linear-gradient(var(--primary),var(--primary-light))}
+.tl-item{position:relative;padding-bottom:2rem}
+.tl-item::before{content:"";position:absolute;left:-2rem;top:4px;width:18px;height:18px;border-radius:50%;background:#fff;border:4px solid var(--primary)}
+.tl-item .year{font-family:'Sora',sans-serif;font-weight:800;color:var(--primary);font-size:1.1rem}
+.tl-item h4{font-size:1rem;font-weight:700}
+.tl-item p{font-size:.88rem;color:var(--muted);margin:0}
+
+/* ============ CONTACT ============ */
+.contact-card{background:#fff;border:1px solid var(--line);border-radius:var(--radius);padding:1.5rem;display:flex;gap:1rem;align-items:flex-start;transition:all .3s ease;height:100%}
+.contact-card:hover{transform:translateY(-4px);box-shadow:var(--shadow)}
+.contact-card .c-icon{flex:0 0 50px;width:50px;height:50px;border-radius:14px;background:rgba(0,87,217,.09);color:var(--primary);display:grid;place-items:center;font-size:1.4rem}
+.contact-card h4{font-size:.98rem;font-weight:700;margin-bottom:.2rem}
+.contact-card p{font-size:.86rem;color:var(--muted);margin:0}
+.form-control-dst,.form-select-dst{
+  border:1px solid var(--line);border-radius:14px;padding:.85rem 1.1rem;font-size:.95rem;background:#fff;
+  transition:all .3s ease;
+}
+.form-control-dst:focus,.form-select-dst:focus{outline:none;border-color:var(--primary);box-shadow:0 0 0 4px rgba(0,87,217,.12)}
+.map-placeholder{
+  position:relative;border-radius:var(--radius-lg);overflow:hidden;min-height:380px;border:1px solid var(--line);
+  background:radial-gradient(600px 300px at 80% 20%,rgba(46,168,255,.3),transparent 60%),var(--bg-soft);
+}
+.map-placeholder::before{content:"";position:absolute;inset:0;background-image:linear-gradient(rgba(0,87,217,.14) 1px,transparent 1px),linear-gradient(90deg,rgba(0,87,217,.14) 1px,transparent 1px);background-size:34px 34px}
+.map-pin{
+  position:absolute;top:44%;left:52%;transform:translate(-50%,-100%);text-align:center;z-index:2;
+  animation:bob 2.2s ease-in-out infinite;
+}
+.map-pin i{font-size:2.6rem;color:var(--primary);filter:drop-shadow(0 8px 16px rgba(0,87,217,.4))}
+.map-pin .pin-label{background:var(--primary);color:#fff;font-size:.75rem;font-weight:700;padding:.3rem .7rem;border-radius:100px;white-space:nowrap;box-shadow:var(--shadow)}
+@keyframes bob{0%,100%{transform:translate(-50%,-100%)}50%{transform:translate(-50%,-115%)}}
+
+/* ============ FOOTER ============ */
+.footer{background:#071A38;color:rgba(255,255,255,.75);padding:4.5rem 0 0;position:relative}
+.footer::before{content:"";position:absolute;top:0;left:0;right:0;height:3px;background:var(--grad)}
+.footer h5{color:#fff;font-size:.95rem;font-weight:700;text-transform:uppercase;letter-spacing:.08em;margin-bottom:1.2rem}
+.footer a{color:rgba(255,255,255,.7);font-size:.9rem;display:inline-flex;align-items:center;gap:.5rem;margin:.3rem 0;transition:all .25s ease}
+.footer a:hover{color:#fff;transform:translateX(3px)}
+.footer .social a{
+  width:40px;height:40px;border-radius:12px;background:rgba(255,255,255,.08);display:inline-grid;place-items:center;
+  font-size:1.05rem;margin:0 .35rem .5rem 0;border:1px solid rgba(255,255,255,.1);
+}
+.footer .social a:hover{background:var(--grad);transform:translateY(-3px)}
+.footer-bottom{border-top:1px solid rgba(255,255,255,.1);margin-top:3rem;padding:1.3rem 0;font-size:.82rem}
+
+/* ============ BOUTONS FLOTTANTS ============ */
+.fab-wa{
+  position:fixed;bottom:1.4rem;right:1.4rem;z-index:1040;width:60px;height:60px;border-radius:50%;
+  background:#25D366;color:#fff;display:grid;place-items:center;font-size:1.9rem;
+  box-shadow:0 14px 34px rgba(37,211,102,.45);transition:all .3s ease;animation:waPulse 2.4s infinite;
+}
+.fab-wa:hover{transform:scale(1.1);color:#fff}
+.fab-wa::before{content:"";position:absolute;inset:0;border-radius:50%;border:2px solid #25D366;animation:waRing 2.4s ease-out infinite}
+@keyframes waPulse{0%,100%{box-shadow:0 14px 34px rgba(37,211,102,.45)}50%{box-shadow:0 14px 44px rgba(37,211,102,.7)}}
+@keyframes waRing{0%{transform:scale(1);opacity:.7}100%{transform:scale(1.7);opacity:0}}
+.fab-top{
+  position:fixed;bottom:1.4rem;right:5.4rem;z-index:1040;width:46px;height:46px;border-radius:14px;
+  background:rgba(255,255,255,.9);backdrop-filter:blur(8px);color:var(--primary);border:1px solid var(--line);
+  display:grid;place-items:center;font-size:1.2rem;box-shadow:var(--shadow);opacity:0;visibility:hidden;transition:all .3s ease;
+}
+.fab-top.show{opacity:1;visibility:visible}
+
+/* ============ ANIMATIONS RÉVÉLATION ============ */
+.reveal{opacity:0;transform:translateY(30px);transition:opacity .7s ease,transform .7s ease;transition-delay:var(--d,0s)}
+.reveal-left{opacity:0;transform:translateX(-40px);transition:opacity .7s ease,transform .7s ease;transition-delay:var(--d,0s)}
+.reveal-right{opacity:0;transform:translateX(40px);transition:opacity .7s ease,transform .7s ease;transition-delay:var(--d,0s)}
+.reveal-zoom{opacity:0;transform:scale(.88);transition:opacity .7s ease,transform .7s ease;transition-delay:var(--d,0s)}
+.reveal.visible,.reveal-left.visible,.reveal-right.visible,.reveal-zoom.visible{opacity:1;transform:none}
+
+/* ============ MODAL ============ */
+.modal-content{border:none;border-radius:var(--radius-lg);overflow:hidden}
+.modal-header-dst{background:var(--grad-dark);color:#fff;padding:1.6rem 1.8rem;position:relative;overflow:hidden}
+.modal-header-dst::before{content:"";position:absolute;inset:0;background-image:linear-gradient(rgba(255,255,255,.1) 1px,transparent 1px),linear-gradient(90deg,rgba(255,255,255,.1) 1px,transparent 1px);background-size:30px 30px;opacity:.3}
+.modal-header-dst h3{color:#fff;position:relative}
+.modal-header-dst .btn-close{filter:invert(1);position:relative}
+
+/* ============ RESPONSIVE ============ */
+@media (max-width: 991.98px){
+  .navbar-dst .navbar-collapse{
+    background:rgba(255,255,255,.97);border-radius:var(--radius);padding:1rem;
+    box-shadow:var(--shadow);margin-top:.6rem;backdrop-filter:blur(16px);
+  }
+  .hero{min-height:auto;padding:8rem 0 8rem}
+  .stats-band{margin-top:-90px}
+}
+@media (max-width: 575.98px){
+  .section{padding:4rem 0}
+  .float-card.fc1{left:0}
+  .float-card.fc2{right:0}
+  .icon-orb.io1{left:-4%}
+  .icon-orb.io2{right:-4%}
+}
+@media (prefers-reduced-motion: reduce){
+  *,*::before,*::after{animation-duration:.01ms!important;transition-duration:.01ms!important}
+  .reveal,.reveal-left,.reveal-right,.reveal-zoom{opacity:1;transform:none}
+}
+</style>
+</head>
+
+<body>
+<a class="skip-link" href="#main-content">Aller au contenu principal</a>
+
+<!-- ============================================================
+     NAVBAR
+     ============================================================ -->
+<nav class="navbar navbar-expand-lg navbar-dst" id="mainNav" aria-label="Navigation principale">
+  <div class="container">
+    <a class="navbar-brand brand-logo" href="#/accueil" aria-label="Digital Support Tech — Accueil">
+      <span class="logo-mark"><img src="logo.png" alt=""></span>
+      <span class="brand-name">DIGITAL SUPPORT TECH<small>Expert informatique</small></span>
+    </a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navMenu" aria-controls="navMenu" aria-expanded="false" aria-label="Ouvrir le menu">
+      <i class="bi bi-list"></i>
+    </button>
+    <div class="collapse navbar-collapse" id="navMenu">
+      <ul class="navbar-nav mx-auto">
+        <li class="nav-item"><a class="nav-link" href="#/accueil" data-route="accueil">Accueil</a></li>
+        <li class="nav-item"><a class="nav-link" href="#/services" data-route="services">Services</a></li>
+        <li class="nav-item"><a class="nav-link" href="#/diagnostic" data-route="diagnostic">Diagnostic</a></li>
+        <li class="nav-item"><a class="nav-link" href="#/guides" data-route="guides">Guides</a></li>
+        <li class="nav-item"><a class="nav-link" href="#/blog" data-route="blog">Blog</a></li>
+        <li class="nav-item"><a class="nav-link" href="#/telechargements" data-route="telechargements">Téléchargements</a></li>
+        <li class="nav-item"><a class="nav-link" href="#/faq" data-route="faq">FAQ</a></li>
+        <li class="nav-item"><a class="nav-link" href="#/apropos" data-route="apropos">À propos</a></li>
+        <li class="nav-item"><a class="nav-link" href="#/contact" data-route="contact">Contact</a></li>
+      </ul>
+      <a href="#/contact" class="btn btn-brand btn-sm px-3" data-route="contact"><i class="bi bi-headset me-1"></i> Assistance</a>
+    </div>
+  </div>
+</nav>
+
+<main id="main-content">
+
+<!-- ============================================================
+     PAGE : ACCUEIL
+     ============================================================ -->
+<section class="page active" id="page-accueil" aria-label="Page d'accueil">
+
+  <!-- HERO -->
+  <header class="hero">
+    <div class="blob b1"></div><div class="blob b2"></div><div class="blob b3"></div>
+    <div class="container position-relative" style="z-index:2">
+      <div class="row align-items-center g-5">
+        <div class="col-lg-6">
+          <span class="badge-live mb-4"><span class="pulse-dot"></span> Techniciens disponibles — réponse sous 1 h</span>
+          <h1 class="mt-3">Votre expert en <span class="grad-text">support technique</span> et maintenance informatique</h1>
+          <p class="lead mt-3">Nous diagnostiquons, réparons et optimisons votre ordinateur rapidement, sur place ou à distance.</p>
+          <div class="hero-points">
+            <span><i class="bi bi-check-circle-fill"></i> Dépannage express</span>
+            <span><i class="bi bi-check-circle-fill"></i> Prix transparents</span>
+            <span><i class="bi bi-check-circle-fill"></i> Garantie 30 jours</span>
+            <span><i class="bi bi-check-circle-fill"></i> Données protégées</span>
+          </div>
+          <div class="d-flex flex-wrap gap-3 mt-4">
+            <a href="#/contact" class="btn btn-brand btn-lg" data-route="contact"><i class="bi bi-headset me-2"></i>Demander une assistance</a>
+            <a href="#/services" class="btn btn-ghost btn-lg" data-route="services">Découvrir nos services <i class="bi bi-arrow-right ms-1"></i></a>
+          </div>
+        </div>
+        <div class="col-lg-6">
+          <!-- Illustration : ordinateur + Windows + réseau + sécurité + support -->
+          <div class="hero-visual">
+            <svg class="orbit-svg" viewBox="0 0 600 520" fill="none" aria-hidden="true">
+              <path d="M300 80 C 480 80, 540 300, 300 460 C 90 460, 120 80, 300 80 Z" stroke="rgba(255,255,255,.25)" stroke-width="1.5" stroke-dasharray="6 8"/>
+              <path d="M300 60 C 420 60, 100 260, 300 440 C 160 440, 180 60, 300 60 Z" stroke="rgba(255,255,255,.15)" stroke-width="1.5" stroke-dasharray="6 8"/>
+              <circle cx="300" cy="80" r="4" fill="#7FD1FF"/><circle cx="300" cy="460" r="4" fill="#7FD1FF"/>
+              <circle cx="540" cy="300" r="4" fill="#7FD1FF"/><circle cx="90" cy="300" r="4" fill="#7FD1FF"/>
+              <circle cx="420" cy="60" r="3" fill="#2EA8FF"/><circle cx="100" cy="260" r="3" fill="#2EA8FF"/>
+              <circle cx="160" cy="440" r="3" fill="#2EA8FF"/><circle cx="180" cy="60" r="3" fill="#2EA8FF"/>
+            </svg>
+            <div class="icon-orb io1" title="Sécurité"><i class="bi bi-shield-check"></i></div>
+            <div class="icon-orb io2" title="Réseau"><i class="bi bi-wifi"></i></div>
+            <div class="icon-orb io3" title="Maintenance"><i class="bi bi-gear"></i></div>
+            <div class="icon-orb io4" title="Support"><i class="bi bi-headset"></i></div>
+
+            <div class="hero-screen">
+              <div class="screen-top" aria-hidden="true">
+                <i style="background:#FF5F57"></i><i style="background:#FEBC2E"></i><i style="background:#28C840"></i>
+              </div>
+              <div class="mock-window">
+                <div class="mock-bar" aria-hidden="true">
+                  <span style="background:#FF5F57"></span><span style="background:#FEBC2E"></span><span style="background:#28C840"></span>
+                  <small style="font-size:.7rem;color:#8A9AB5;margin-left:.4rem">Diagnostic — Digital Support Tech</small>
+                </div>
+                <div class="mock-body">
+                  <div class="win-logo" aria-hidden="true">
+                    <i style="background:#0057D9"></i><i style="background:#2EA8FF"></i><i style="background:#2EA8FF"></i><i style="background:#0057D9"></i>
+                  </div>
+                  <div class="mock-line"></div><div class="mock-line l2"></div><div class="mock-line l3"></div>
+                  <div class="d-flex gap-2" aria-hidden="true"><div class="mock-btn"></div><div style="width:35%;height:20px;border-radius:6px;background:#E4EBF5"></div></div>
+                </div>
+              </div>
+            </div>
+
+            <div class="float-card fc1"><i class="bi bi-bug-fill" style="color:#E5484D"></i> Virus neutralisé</div>
+            <div class="float-card fc2"><i class="bi bi-pc-display" style="color:#0057D9"></i> Windows installé</div>
+            <div class="float-card fc3"><i class="bi bi-cloud-check" style="color:#0FA968"></i> Données sauvegardées</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- STATISTIQUES ANIMÉES -->
+  <div class="container stats-band">
+    <div class="row g-3">
+      <div class="col-6 col-lg-3 reveal" style="--d:.05s"><div class="stat-card"><div class="num"><span class="counter" data-target="100" data-suffix="+">0</span></div><div class="lbl">PC réparés</div></div></div>
+      <div class="col-6 col-lg-3 reveal" style="--d:.15s"><div class="stat-card"><div class="num"><span class="counter" data-target="98" data-suffix=" %">0</span></div><div class="lbl">De satisfaction client</div></div></div>
+      <div class="col-6 col-lg-3 reveal" style="--d:.25s"><div class="stat-card"><div class="num"><span class="counter" data-target="24" data-suffix=" h">0</span></div><div class="lbl">De support / 7j</div></div></div>
+      <div class="col-6 col-lg-3 reveal" style="--d:.35s"><div class="stat-card"><div class="num"><span class="counter" data-target="100" data-suffix=" %">0</span></div><div class="lbl">Assistance personnalisée</div></div></div>
+    </div>
+  </div>
+
+  <!-- BANDEAU CONFIANCE -->
+  <div class="py-4 border-bottom" style="background:#fff">
+    <div class="container">
+      <div class="d-flex flex-wrap justify-content-center align-items-center gap-4 gap-lg-5 opacity-75">
+        <span class="d-inline-flex align-items-center gap-2 fw-semibold text-secondary"><i class="bi bi-windows fs-5 text-primary"></i> Windows 10 / 11</span>
+        <span class="d-inline-flex align-items-center gap-2 fw-semibold text-secondary"><i class="bi bi-microsoft fs-5 text-primary"></i> Microsoft 365</span>
+        <span class="d-inline-flex align-items-center gap-2 fw-semibold text-secondary"><i class="bi bi-shield-shaded fs-5 text-primary"></i> Antivirus certifiés</span>
+        <span class="d-inline-flex align-items-center gap-2 fw-semibold text-secondary"><i class="bi bi-cpu fs-5 text-primary"></i> Matériel PC & Mac</span>
+        <span class="d-inline-flex align-items-center gap-2 fw-semibold text-secondary"><i class="bi bi-cloud-check fs-5 text-primary"></i> Sauvegarde cloud</span>
+      </div>
+    </div>
+  </div>
+
+  <!-- APERÇU SERVICES -->
+  <div class="section">
+    <div class="container">
+      <div class="text-center mb-5 reveal">
+        <span class="eyebrow"><i class="bi bi-grid-1x2"></i> Nos services</span>
+        <h2 class="sec-title display-6">Des solutions complètes pour <span class="text-gradient">votre informatique</span></h2>
+        <p class="sec-sub mx-auto">De l'installation de Windows à la récupération de vos données, nous prenons en charge l'ensemble de vos besoins techniques.</p>
+      </div>
+      <div class="row g-4" id="homeServices"></div>
+      <div class="text-center mt-5 reveal">
+        <a href="#/services" class="btn btn-outline-brand" data-route="services">Voir tous nos services <i class="bi bi-arrow-right ms-1"></i></a>
+      </div>
+    </div>
+  </div>
+
+  <!-- COMMENT ÇA MARCHE -->
+  <div class="section section-soft">
+    <div class="container">
+      <div class="text-center mb-5 reveal">
+        <span class="eyebrow"><i class="bi bi-diagram-3"></i> Processus</span>
+        <h2 class="sec-title display-6">Comment ça marche ?</h2>
+        <p class="sec-sub mx-auto">Un parcours simple et transparent, de la prise de contact jusqu'au suivi après intervention.</p>
+      </div>
+      <div class="row g-4">
+        <div class="col-md-6 col-lg-3 reveal" style="--d:.05s">
+          <div class="step-card">
+            <span class="step-connector" aria-hidden="true"></span>
+            <div class="step-num">1</div>
+            <h3 class="fs-6 fw-bold">Contactez-nous</h3>
+            <p>Par téléphone, WhatsApp ou formulaire. Décrivez votre problème, nous répondons en moins d'une heure.</p>
+          </div>
+        </div>
+        <div class="col-md-6 col-lg-3 reveal" style="--d:.15s">
+          <div class="step-card">
+            <span class="step-connector" aria-hidden="true"></span>
+            <div class="step-num">2</div>
+            <h3 class="fs-6 fw-bold">Diagnostic</h3>
+            <p>Nous identifions la cause exacte de la panne, à distance ou sur place, et vous remettons un devis clair.</p>
+          </div>
+        </div>
+        <div class="col-md-6 col-lg-3 reveal" style="--d:.25s">
+          <div class="step-card">
+            <span class="step-connector" aria-hidden="true"></span>
+            <div class="step-num">3</div>
+            <h3 class="fs-6 fw-bold">Réparation</h3>
+            <p>Intervention rapide et propre. Vos données restent intactes et votre système est testé avant restitution.</p>
+          </div>
+        </div>
+        <div class="col-md-6 col-lg-3 reveal" style="--d:.35s">
+          <div class="step-card">
+            <div class="step-num">4</div>
+            <h3 class="fs-6 fw-bold">Suivi & garantie</h3>
+            <p>Garantie 30 jours sur chaque intervention. Un technicien reste joignable pour toute question.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- POURQUOI NOUS -->
+  <div class="section">
+    <div class="container">
+      <div class="row align-items-center g-5">
+        <div class="col-lg-5 reveal-left">
+          <span class="eyebrow"><i class="bi bi-patch-check"></i> Pourquoi nous choisir</span>
+          <h2 class="sec-title display-6">L'expertise d'une grande entreprise, <span class="text-gradient">la proximité d'un partenaire local</span></h2>
+          <p class="sec-sub">Chaque intervention est réalisée par des techniciens certifiés, avec des outils professionnels et une méthode éprouvée sur plus de 100 PC.</p>
+          <ul class="list-unstyled mt-4">
+            <li class="d-flex gap-2 mb-2"><i class="bi bi-check-circle-fill text-primary mt-1"></i><span><strong>Devis gratuit</strong> et sans engagement pour tout diagnostic</span></li>
+            <li class="d-flex gap-2 mb-2"><i class="bi bi-check-circle-fill text-primary mt-1"></i><span><strong>Garantie 30 jours</strong> sur toutes nos interventions</span></li>
+            <li class="d-flex gap-2 mb-2"><i class="bi bi-check-circle-fill text-primary mt-1"></i><span><strong>Confidentialité totale</strong> de vos données personnelles</span></li>
+            <li class="d-flex gap-2"><i class="bi bi-check-circle-fill text-primary mt-1"></i><span><strong>Particuliers & entreprises</strong> : contrats de maintenance disponibles</span></li>
+          </ul>
+          <a href="#/apropos" class="btn btn-brand mt-3" data-route="apropos">En savoir plus sur nous <i class="bi bi-arrow-right ms-1"></i></a>
+        </div>
+        <div class="col-lg-7">
+          <div class="row g-3">
+            <div class="col-sm-6 reveal" style="--d:.05s"><div class="feature-card"><div class="f-icon"><i class="bi bi-lightning-charge"></i></div><div><h4>Réactivité extrême</h4><p>Réponse sous 1 h et dépannage à distance en moins de 30 minutes en moyenne.</p></div></div></div>
+            <div class="col-sm-6 reveal" style="--d:.15s"><div class="feature-card"><div class="f-icon"><i class="bi bi-award"></i></div><div><h4>Techniciens certifiés</h4><p>Formations Microsoft, sécurité et matériel continuellement mises à jour.</p></div></div></div>
+            <div class="col-sm-6 reveal" style="--d:.25s"><div class="feature-card"><div class="f-icon"><i class="bi bi-shield-lock"></i></div><div><h4>Sécurité des données</h4><p>Protocols stricts, sessions chiffrées et jamais d'accès à vos mots de passe.</p></div></div></div>
+            <div class="col-sm-6 reveal" style="--d:.35s"><div class="feature-card"><div class="f-icon"><i class="bi bi-cash-coin"></i></div><div><h4>Prix transparents</h4><p>Devis détaillé avant toute intervention. Aucun frais caché, jamais.</p></div></div></div>
+            <div class="col-sm-6 reveal" style="--d:.45s"><div class="feature-card"><div class="f-icon"><i class="bi bi-clock-history"></i></div><div><h4>Disponibilité 24 h/7 j</h4><p>Assistance d'urgence le soir et le week-end pour les situations critiques.</p></div></div></div>
+            <div class="col-sm-6 reveal" style="--d:.55s"><div class="feature-card"><div class="f-icon"><i class="bi bi-people"></i></div><div><h4>Accompagnement</h4><p>Nous expliquons chaque réparation et vous formons aux bons gestes.</p></div></div></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- TÉMOIGNAGES -->
+  <div class="section section-soft">
+    <div class="container">
+      <div class="text-center mb-5 reveal">
+        <span class="eyebrow"><i class="bi bi-chat-quote"></i> Témoignages</span>
+        <h2 class="sec-title display-6">Ils nous ont fait <span class="text-gradient">confiance</span></h2>
+      </div>
+      <div class="row g-4">
+        <div class="col-md-4 reveal" style="--d:.05s">
+          <div class="testi-card">
+            <div class="stars"><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i></div>
+            <p class="quote">« Mon PC ne démarrait plus la veille d'un rendu important. Diagnostiqué à distance, Windows réinstallé et toutes mes données récupérées en une soirée. Impressionnant ! »</p>
+            <div class="d-flex align-items-center gap-3">
+              <div class="testi-avatar" style="background:linear-gradient(135deg,#0057D9,#2EA8FF)">SR</div>
+              <div><strong class="d-block" style="font-size:.9rem">Sophie R.</strong><small class="text-secondary">Particulière — Paris</small></div>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4 reveal" style="--d:.15s">
+          <div class="testi-card">
+            <div class="stars"><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i></div>
+            <p class="quote">« Contrat de maintenance pour nos 12 postes. Interventions rapides, reporting clair, équipe très professionnelle. Un vrai partenaire informatique. »</p>
+            <div class="d-flex align-items-center gap-3">
+              <div class="testi-avatar" style="background:linear-gradient(135deg,#0A2D6B,#0057D9)">MK</div>
+              <div><strong class="d-block" style="font-size:.9rem">Mehdi K.</strong><small class="text-secondary">Cabinet comptable — Lyon</small></div>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4 reveal" style="--d:.25s">
+          <div class="testi-card">
+            <div class="stars"><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-half"></i></div>
+            <p class="quote">« Virus qui chiffrait mes photos de famille. Ils ont tout récupéré et sécurisé mon PC. Prix annoncé = prix payé. Je recommande les yeux fermés. »</p>
+            <div class="d-flex align-items-center gap-3">
+              <div class="testi-avatar" style="background:linear-gradient(135deg,#2EA8FF,#0FA968)">CL</div>
+              <div><strong class="d-block" style="font-size:.9rem">Claire L.</strong><small class="text-secondary">Particulière — Bordeaux</small></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- APERÇU BLOG -->
+  <div class="section">
+    <div class="container">
+      <div class="d-flex flex-wrap justify-content-between align-items-end mb-5 reveal">
+        <div>
+          <span class="eyebrow"><i class="bi bi-newspaper"></i> Le blog</span>
+          <h2 class="sec-title display-6 mb-0">Conseils & actualités <span class="text-gradient">informatique</span></h2>
+        </div>
+        <a href="#/blog" class="btn btn-outline-brand mt-3 mt-sm-0" data-route="blog">Tous les articles <i class="bi bi-arrow-right ms-1"></i></a>
+      </div>
+      <div class="row g-4" id="homeBlog"></div>
+    </div>
+  </div>
+
+  <!-- CTA FINAL -->
+  <div class="section pt-0">
+    <div class="container">
+      <div class="cta-band text-center reveal">
+        <h2 class="display-6 fw-bold mb-3">Un problème informatique ?</h2>
+        <p class="mx-auto mb-4" style="max-width:560px">Ne laissez pas une panne vous ralentir. Notre équipe intervient dès maintenant, sur place ou à distance.</p>
+        <div class="d-flex flex-wrap gap-3 justify-content-center">
+          <a href="#/contact" class="btn btn-brand btn-lg" data-route="contact"><i class="bi bi-headset me-2"></i>Demander une assistance</a>
+          <a href="https://wa.me/22655757299?text=Bonjour%2C%20j%27ai%20besoin%20d%27aide%20informatique." target="_blank" rel="noopener" class="btn btn-wa btn-lg"><i class="bi bi-whatsapp me-2"></i>WhatsApp direct</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============================================================
+     PAGE : SERVICES
+     ============================================================ -->
+<section class="page" id="page-services" aria-label="Page Services">
+  <header class="page-hero">
+    <div class="container position-relative">
+      <p class="crumb"><a href="#/accueil" data-route="accueil">Accueil</a> <i class="bi bi-chevron-right mx-1"></i> Services</p>
+      <h1 class="mt-2">Nos services informatiques</h1>
+      <p class="mt-2 mb-0" style="color:rgba(255,255,255,.8);max-width:640px">Dépannage, installation, optimisation et sécurité : une gamme complète de services pour particuliers et entreprises.</p>
+    </div>
+  </header>
+  <div class="section">
+    <div class="container">
+      <div class="row g-4" id="servicesGrid"></div>
+    </div>
+  </div>
+  <div class="section pt-0">
+    <div class="container">
+      <div class="cta-band text-center reveal">
+        <h2 class="fw-bold mb-3">Vous ne trouvez pas votre besoin ?</h2>
+        <p class="mx-auto mb-4" style="max-width:520px">Chaque situation est unique. Décrivez-nous votre problème, nous trouverons la solution.</p>
+        <a href="https://wa.me/22655757299?" class="btn btn-brand btn-lg" data-route="contact"><i class="bi bi-chat-dots me-2"></i>Parler à un technicien</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============================================================
+     PAGE : DIAGNOSTIC
+     ============================================================ -->
+<section class="page" id="page-diagnostic" aria-label="Page Diagnostic interactif">
+  <header class="page-hero">
+    <div class="container position-relative">
+      <p class="crumb"><a href="#/accueil" data-route="accueil">Accueil</a> <i class="bi bi-chevron-right mx-1"></i> Diagnostic</p>
+      <h1 class="mt-2">Diagnostic interactif</h1>
+      <p class="mt-2 mb-0" style="color:rgba(255,255,255,.8);max-width:640px">Sélectionnez votre problème. Nous vous guidons pas à pas vers les causes probables et les premières solutions.</p>
+    </div>
+  </header>
+  <div class="section">
+    <div class="container">
+      <div id="diagStart" class="reveal visible">
+        <h2 class="sec-title text-center mb-2">Quel est votre problème ?</h2>
+        <p class="sec-sub mx-auto text-center mb-5">Cliquez sur le symptôme le plus proche de votre situation.</p>
+        <div class="row g-3" id="diagGrid"></div>
+      </div>
+      <div id="diagPanel" class="diag-panel d-none">
+        <button class="btn btn-outline-brand btn-sm mb-4" id="diagBack"><i class="bi bi-arrow-left me-1"></i> Choisir un autre problème</button>
+        <div class="d-flex align-items-center gap-3 mb-2">
+          <span class="diag-emoji" id="diagEmoji" style="font-size:2rem"></span>
+          <h2 class="fs-3 fw-bold mb-0" id="diagTitle"></h2>
+        </div>
+        <div class="progress progress-dst mb-4" role="progressbar" aria-label="Progression du diagnostic"><div class="progress-bar" id="diagBar" style="width:0%"></div></div>
+        <div id="diagContent"></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============================================================
+     PAGE : GUIDES
+     ============================================================ -->
+<section class="page" id="page-guides" aria-label="Page Guides pratiques">
+  <header class="page-hero">
+    <div class="container position-relative">
+      <p class="crumb"><a href="#/accueil" data-route="accueil">Accueil</a> <i class="bi bi-chevron-right mx-1"></i> Guides</p>
+      <h1 class="mt-2">Guides pratiques</h1>
+      <p class="mt-2 mb-0" style="color:rgba(255,255,255,.8);max-width:640px">Résolvez vous-même les problèmes courants grâce à nos tutoriels clairs et illustrés, classés par catégorie.</p>
+    </div>
+  </header>
+  <div class="section">
+    <div class="container">
+      <div class="row g-4">
+        <div class="col-lg-12">
+          <div class="d-flex flex-wrap justify-content-between align-items-center gap-3 mb-4">
+            <div class="search-box flex-grow-1" style="max-width:100%">
+              <i class="bi bi-search"></i>
+              <input type="search" id="guideSearch" placeholder="Rechercher un guide… (ex : virus, SSD, imprimante)" aria-label="Rechercher un guide">
+            </div>
+          </div>
+          <div class="d-flex flex-wrap gap-2 mb-4" id="guideFilters"></div>
+          <p class="text-secondary small mb-3" id="guideCount"></p>
+          <div class="row g-4" id="guidesGrid"></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============================================================
+     PAGE : BLOG
+     ============================================================ -->
+<section class="page" id="page-blog" aria-label="Page Blog">
+  <header class="page-hero">
+    <div class="container position-relative">
+      <p class="crumb"><a href="#/accueil" data-route="accueil">Accueil</a> <i class="bi bi-chevron-right mx-1"></i> Blog</p>
+      <h1 class="mt-2">Le blog Digital Support Tech</h1>
+      <p class="mt-2 mb-0" style="color:rgba(255,255,255,.8);max-width:640px">Actualités, conseils et astuces pour tirer le meilleur de votre matériel et rester protégé en ligne.</p>
+    </div>
+  </header>
+  <div class="section">
+    <div class="container">
+      <div class="row g-4">
+        <div class="col-lg-8">
+          <div class="row g-4" id="blogGrid"></div>
+          <nav class="mt-5" aria-label="Pagination du blog"><ul class="pagination pagination-dst justify-content-center" id="blogPagination"></ul></nav>
+        </div>
+        <aside class="col-lg-4" aria-label="Sidebar du blog">
+          <div class="side-widget">
+            <h4>Catégories</h4>
+            <div id="blogCategories"></div>
+          </div>
+          <div class="side-widget">
+            <h4>Articles populaires</h4>
+            <div id="blogPopular"></div>
+          </div>
+          <div class="side-widget text-center" style="background:var(--grad-dark);border:none">
+            <i class="bi bi-headset text-white" style="font-size:2rem"></i>
+            <h4 class="text-white mt-2">Besoin d'aide ?</h4>
+            <p style="color:rgba(255,255,255,.8);font-size:.85rem">Un technicien répond à vos questions en moins d'une heure.</p>
+            <a href="#/contact" class="btn btn-light w-100 fw-semibold" data-route="contact">Nous contacter</a>
+          </div>
+        </aside>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============================================================
+     PAGE : TÉLÉCHARGEMENTS
+     ============================================================ -->
+<section class="page" id="page-telechargements" aria-label="Page Téléchargements">
+  <header class="page-hero">
+    <div class="container position-relative">
+      <p class="crumb"><a href="#/accueil" data-route="accueil">Accueil</a> <i class="bi bi-chevron-right mx-1"></i> Téléchargements</p>
+      <h1 class="mt-2">Logiciels & outils</h1>
+      <p class="mt-2 mb-0" style="color:rgba(255,255,255,.8);max-width:640px">Téléchargez les logiciels essentiels recommandés par nos techniciens. Liens officiels et sécurisés uniquement.</p>
+    </div>
+  </header>
+  <div class="section">
+    <div class="container">
+      <div class="search-box mx-auto mb-4 reveal visible">
+        <i class="bi bi-search"></i>
+        <input type="search" id="dlSearch" placeholder="Rechercher un logiciel…" aria-label="Rechercher un logiciel">
+      </div>
+      <div class="d-flex flex-wrap gap-2 justify-content-center mb-5" id="dlFilters"></div>
+      <div class="row g-4" id="dlGrid"></div>
+      <div class="alert alert-light border mt-5 d-flex gap-3 align-items-start" role="note">
+        <i class="bi bi-shield-check text-primary fs-4"></i>
+        <div><strong>Conseil sécurité :</strong> téléchargez uniquement depuis les sites officiels. Nos techniciens vérifient chaque lien et peuvent installer les logiciels pour vous lors d'une intervention.</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============================================================
+     PAGE : FAQ
+     ============================================================ -->
+<section class="page" id="page-faq" aria-label="Page FAQ">
+  <header class="page-hero">
+    <div class="container position-relative">
+      <p class="crumb"><a href="#/accueil" data-route="accueil">Accueil</a> <i class="bi bi-chevron-right mx-1"></i> FAQ</p>
+      <h1 class="mt-2">Questions fréquentes</h1>
+      <p class="mt-2 mb-0" style="color:rgba(255,255,255,.8);max-width:640px">Tout ce que vous devez savoir avant de faire appel à nos services.</p>
+    </div>
+  </header>
+  <div class="section">
+    <div class="container" style="max-width:860px">
+      <div class="accordion accordion-dst" id="faqAccordion"></div>
+      <div class="text-center mt-5">
+        <p class="text-secondary">Une autre question ?</p>
+        <a href="#/contact" class="btn btn-brand" data-route="contact"><i class="bi bi-chat-dots me-2"></i>Posez-la à un technicien</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============================================================
+     PAGE : À PROPOS
+     ============================================================ -->
+<section class="page" id="page-apropos" aria-label="Page À propos">
+  <header class="page-hero">
+    <div class="container position-relative">
+      <p class="crumb"><a href="#/accueil" data-route="accueil">Accueil</a> <i class="bi bi-chevron-right mx-1"></i> À propos</p>
+      <h1 class="mt-2">L'équipe derrière Digital Support Tech</h1>
+      <p class="mt-2 mb-0" style="color:rgba(255,255,255,.8);max-width:640px">Une histoire simple : rendre l'informatique accessible, fiable et sans stress pour tous.</p>
+    </div>
+  </header>
+
+  <!-- HISTOIRE -->
+  <div class="section">
+    <div class="container">
+      <div class="row align-items-center g-5">
+        <div class="col-lg-6 reveal-left">
+          <span class="eyebrow"><i class="bi bi-stars"></i> Notre histoire</span>
+          <h2 class="sec-title display-6">Née d'un constat : <span class="text-gradient">l'informatique ne devrait pas être un casse-tête</span></h2>
+          <p>Digital Support Tech est né de la frustration de voir des particuliers et des petites entreprises abandonnés face à des pannes informatiques, des tarifs opaques et des délais interminables.</p>
+          <p class="mb-0">Notre promesse : une expertise de niveau « grande entreprise » avec la réactivité et la proximité d'une équipe passionnée. Chaque intervention suit un protocole rigoureux — diagnostic, devis clair, réparation, tests, suivi — pour un résultat net et durable.</p>
+          <div class="d-flex flex-wrap gap-3 mt-4">
+            <div class="stat-card" style="min-width:130px"><div class="num"><span class="counter" data-target="3" data-suffix="+">0</span></div><div class="lbl">Années d'expérience</div></div>
+            <div class="stat-card" style="min-width:130px"><div class="num"><span class="counter" data-target="54" data-suffix="+">0</span></div><div class="lbl">Avis clients</div></div>
+          </div>
+        </div>
+        <div class="col-lg-6 reveal-right">
+          <img src="https://images.pexels.com/photos/10558599/pexels-photo-10558599.jpeg?auto=compress&cs=tinysrgb&fit=crop&h=627&w=1200" alt="Technicien Digital Support Tech réparant un ordinateur de bureau dans notre atelier" class="img-fluid rounded-4 shadow" style="border-radius:26px" loading="lazy" width="1200" height="627">
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- VALEURS -->
+  <div class="section section-soft">
+    <div class="container">
+      <div class="text-center mb-5 reveal">
+        <span class="eyebrow"><i class="bi bi-heart"></i> Nos valeurs</span>
+        <h2 class="sec-title display-6">Ce qui nous anime au quotidien</h2>
+      </div>
+      <div class="row g-4">
+        <div class="col-md-6 col-lg-3 reveal" style="--d:.05s"><div class="value-card"><div class="v-icon"><i class="bi bi-briefcase"></i></div><h3>Professionnalisme</h3><p>Méthode, rigueur et outils certifiés. Chaque intervention est documentée et tracée.</p></div></div>
+        <div class="col-md-6 col-lg-3 reveal" style="--d:.15s"><div class="value-card"><div class="v-icon"><i class="bi bi-lightning-charge"></i></div><h3>Réactivité</h3><p>Réponse sous 1 h et dépannage à distance en moins de 30 minutes en moyenne.</p></div></div>
+        <div class="col-md-6 col-lg-3 reveal" style="--d:.25s"><div class="value-card"><div class="v-icon"><i class="bi bi-mortarboard"></i></div><h3>Expertise</h3><p>Techniciens certifiés, veille technologique permanente et montée en compétence continue.</p></div></div>
+        <div class="col-md-6 col-lg-3 reveal" style="--d:.35s"><div class="value-card"><div class="v-icon"><i class="bi bi-people"></i></div><h3>Accompagnement</h3><p>Nous expliquons, formons et restons disponibles après l'intervention. Un vrai suivi.</p></div></div>
+      </div>
+    </div>
+  </div>
+
+  <!-- CHRONOLOGIE -->
+  <div class="section">
+    <div class="container">
+      <div class="row g-5">
+        <div class="col-lg-5 reveal-left">
+          <span class="eyebrow"><i class="bi bi-graph-up-arrow"></i> Notre parcours</span>
+          <h2 class="sec-title display-6">Une croissance <span class="text-gradient">au service des clients</span></h2>
+          <img src="https://images.pexels.com/photos/16385070/pexels-photo-16385070.jpeg?auto=compress&cs=tinysrgb&fit=crop&h=627&w=1200" alt="Notre équipe à l'atelier, réparation d'ordinateur portable" class="img-fluid rounded-4 mt-4" style="border-radius:26px" loading="lazy" width="1200" height="627">
+        </div>
+        <div class="col-lg-7 reveal-right">
+          <div class="timeline">
+            <div class="tl-item"><div class="year">Mars 2026</div><h4>Création de Digital Support Tech</h4><p>Lancement de l'activité de dépannage à domicile et à distance avec un objectif : la satisfaction totale du client.</p></div>
+            <div class="tl-item"><div class="year">Juillet 2026</div><h4>50 PC réparés</h4><p>Premier cap franchi. Nous développons notre offre pour les professionnels et les indépendants.</p></div>
+            <div class="tl-item"><div class="year">Août 2026</div><h4>Plateforme nouvelle génération</h4><p>Lancement du portail de diagnostic en ligne, des guides interactifs et de l'assistance prioritaire 24 h/7 j.</p></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- CERTIFICATIONS -->
+  <div class="section pt-0">
+    <div class="container">
+      <div class="cta-band text-center reveal">
+        <h2 class="fw-bold mb-3">Envie de rejoindre nos clients satisfaits ?</h2>
+        <p class="mx-auto mb-4" style="max-width:520px">Décrivez votre besoin, nous vous rappelons sous une heure avec une solution concrète.</p>
+        <a href="#/contact" class="btn btn-brand btn-lg" data-route="contact"><i class="bi bi-arrow-right me-2"></i>Démarrer maintenant</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============================================================
+     PAGE : CONTACT
+     ============================================================ -->
+<section class="page" id="page-contact" aria-label="Page Contact">
+  <header class="page-hero">
+    <div class="container position-relative">
+      <p class="crumb"><a href="#/accueil" data-route="accueil">Accueil</a> <i class="bi bi-chevron-right mx-1"></i> Contact</p>
+      <h1 class="mt-2">Contactez-nous</h1>
+      <p class="mt-2 mb-0" style="color:rgba(255,255,255,.8);max-width:640px">Un problème, un devis, une question ? Notre équipe vous répond en moins d'une heure.</p>
+    </div>
+  </header>
+  <div class="section">
+    <div class="container">
+      <!-- Coordonnées rapides -->
+      <div class="row g-3 mb-5">
+        <div class="col-md-6 col-lg-3 reveal" style="--d:.05s"><div class="contact-card"><div class="c-icon"><i class="bi bi-whatsapp"></i></div><div><h4>WhatsApp</h4><p>+226 55 75 72 99<br><a href="https://wa.me/22655757299" target="_blank" rel="noopener" class="small text-primary">Discuter maintenant</a></p></div></div></div>
+        <div class="col-md-6 col-lg-3 reveal" style="--d:.15s"><div class="contact-card"><div class="c-icon"><i class="bi bi-envelope"></i></div><div><h4>Email</h4><p>contact@digitalsupporttech.fr<br><a href="mailto:contact@digitalsupporttech.fr" class="small text-primary">Écrire un email</a></p></div></div></div>
+        <div class="col-md-6 col-lg-3 reveal" style="--d:.25s"><div class="contact-card"><div class="c-icon"><i class="bi bi-telephone"></i></div><div><h4>Téléphone</h4><p>+226 54 51 14 37<br><span class="small text-secondary">Lun–Ven : 8 h – 22 h</span></p></div></div></div>
+        <div class="col-md-6 col-lg-3 reveal" style="--d:.35s"><div class="contact-card"><div class="c-icon"><i class="bi bi-clock"></i></div><div><h4>Horaires</h4><p>Lun–Ven : 8 h – 22 h<br>Sam : 9 h – 20 h · Urgences 24 h/7</p></div></div></div>
+      </div>
+
+      <div class="row g-4">
+        <!-- Formulaire -->
+        <div class="col-lg-7 reveal-left">
+          <div class="diag-panel">
+            <h2 class="fs-3 fw-bold mb-1">Envoyez-nous un message</h2>
+            <p class="text-secondary mb-4">Réponse garantie sous 1 heure ouvrée.</p>
+            <form id="contactForm" novalidate>
+              <div class="row g-3">
+                <div class="col-md-6">
+                  <label for="cfNom" class="form-label fw-semibold small">Nom complet *</label>
+                  <input type="text" class="form-control form-control-dst" id="cfNom" placeholder="Jean Dupont" required autocomplete="name">
+                  <div class="invalid-feedback">Veuillez indiquer votre nom.</div>
+                </div>
+                <div class="col-md-6">
+                  <label for="cfEmail" class="form-label fw-semibold small">Email *</label>
+                  <input type="email" class="form-control form-control-dst" id="cfEmail" placeholder="jean@email.fr" required autocomplete="email">
+                  <div class="invalid-feedback">Veuillez indiquer un email valide.</div>
+                </div>
+                <div class="col-md-6">
+                  <label for="cfTel" class="form-label fw-semibold small">Téléphone</label>
+                  <input type="tel" class="form-control form-control-dst" id="cfTel" placeholder="06 12 34 56 78" autocomplete="tel">
+                </div>
+                <div class="col-md-6">
+                  <label for="cfService" class="form-label fw-semibold small">Service concerné *</label>
+                  <select class="form-select form-select-dst" id="cfService" required>
+                    <option value="" selected disabled>Choisir un service…</option>
+                    <option>Maintenance informatique</option>
+                    <option>Installation Windows</option>
+                    <option>Microsoft Office</option>
+                    <option>Antivirus</option>
+                    <option>Optimisation PC</option>
+                    <option>Suppression de virus</option>
+                    <option>Sauvegarde de données</option>
+                    <option>Récupération de données</option>
+                    <option>Assistance à distance</option>
+                    <option>Autre demande</option>
+                  </select>
+                  <div class="invalid-feedback">Veuillez sélectionner un service.</div>
+                </div>
+                <div class="col-12">
+                  <label for="cfMsg" class="form-label fw-semibold small">Message *</label>
+                  <textarea class="form-control form-control-dst" id="cfMsg" rows="5" placeholder="Décrivez votre problème…" required></textarea>
+                  <div class="invalid-feedback">Veuillez décrire votre demande.</div>
+                </div>
+                <div class="col-12 d-flex flex-wrap gap-3">
+                  <button type="submit" class="btn btn-brand"><i class="bi bi-send me-2"></i>Envoyer le message</button>
+                  <a href="https://wa.me/22655757299?text=Bonjour%2C%20je%20souhaite%20une%20assistance." target="_blank" rel="noopener" class="btn btn-wa"><i class="bi bi-whatsapp me-2"></i>WhatsApp</a>
+                </div>
+              </div>
+            </form>
+            <div class="alert alert-success d-none mt-4" id="formSuccess" role="alert">
+              <i class="bi bi-check-circle-fill me-2"></i><strong>Message envoyé !</strong> Notre équipe vous recontacte sous 1 heure ouvrée.
+            </div>
+          </div>
+        </div>
+
+        <!-- Carte & infos -->
+        <div class="col-lg-5">
+          <div class="reveal-right">
+            <div class="map-placeholder" role="img" aria-label="Carte de localisation : Digital Support Tech intervient à Paris et partout en France à distance">
+              <div class="map-pin">
+                <div class="pin-label mb-2">Digital Support Tech</div>
+                <i class="bi bi-geo-alt-fill"></i>
+              </div>
+              <div class="position-absolute bottom-0 start-0 end-0 p-3 text-center" style="z-index:2">
+                <a class="btn btn-brand btn-sm" href="https://maps.google.com/?q=Paris" target="_blank" rel="noopener"><i class="bi bi-map me-1"></i> Voir sur Google Maps</a>
+              </div>
+            </div>
+            <div class="diag-panel mt-4" style="background:var(--grad-dark);color:#fff;border:none">
+              <h3 class="fs-5 fw-bold mb-3">Zone d'intervention</h3>
+              <p class="small mb-2" style="color:rgba(255,255,255,.85)"><i class="bi bi-geo-alt me-2"></i>Bobo-Dioulasso, partout(sur place)</p>
+              <p class="small mb-2" style="color:rgba(255,255,255,.85)"><i class="bi bi-globe me-2"></i>Partout en Afrique comme à l'occident (à distance)</p>
+              <p class="small mb-0" style="color:rgba(255,255,255,.85)"><i class="bi bi-clock me-2"></i>Urgences 24 h/7 j sur demande</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============================================================
+     PAGE : POLITIQUE DE CONFIDENTIALITÉ
+     ============================================================ -->
+<section class="page" id="page-confidentialite" aria-label="Politique de confidentialité">
+  <header class="page-hero">
+    <div class="container position-relative">
+      <p class="crumb"><a href="#/accueil" data-route="accueil">Accueil</a> <i class="bi bi-chevron-right mx-1"></i> Politique de confidentialité</p>
+      <h1 class="mt-2">Politique de confidentialité</h1>
+    </div>
+  </header>
+  <div class="section">
+    <div class="container" style="max-width:820px">
+      <div class="diag-panel">
+        <h2 class="fs-5 fw-bold">1. Données collectées</h2>
+        <p class="text-secondary">Nous collectons uniquement les données nécessaires à la gestion de votre demande : nom, prénom, adresse email, numéro de téléphone et informations relatives à votre équipement. Les données de paiement sont traitées par nos prestataires sécurisés et ne sont jamais stockées sur nos serveurs.</p>
+        <h2 class="fs-5 fw-bold mt-4">2. Utilisation des données</h2>
+        <p class="text-secondary">Vos données sont utilisées pour répondre à vos demandes, planifier vos interventions, vous adresser des devis et assurer le suivi de nos prestations. Avec votre consentement, nous pouvons vous envoyer des conseils techniques et des actualités.</p>
+        <h2 class="fs-5 fw-bold mt-4">3. Confidentialité des interventions</h2>
+        <p class="text-secondary">Lors d'une assistance à distance, les sessions sont chiffrées de bout en bout. Nous ne demandons jamais vos mots de passe et n'accédons à vos fichiers que dans le strict cadre de la réparation, avec votre accord explicite.</p>
+        <h2 class="fs-5 fw-bold mt-4">4. Cookies</h2>
+        <p class="text-secondary">Ce site utilise des cookies techniques indispensables à son fonctionnement ainsi que, avec votre accord, des cookies de mesure d'audience anonymisés. Vous pouvez configurer votre navigateur pour les refuser.</p>
+        <h2 class="fs-5 fw-bold mt-4">5. Vos droits (RGPD)</h2>
+        <p class="text-secondary">Conformément au RGPD, vous disposez d'un droit d'accès, de rectification, d'effacement, de portabilité et d'opposition sur vos données. Pour l'exercer, écrivez-nous à contact@digitalsupporttech.fr. Nous répondons sous 30 jours maximum.</p>
+        <h2 class="fs-5 fw-bold mt-4">6. Durée de conservation</h2>
+        <p class="text-secondary">Vos données sont conservées pendant la durée de la relation commerciale puis archivées 3 ans à des fins de garantie et de conformité légale.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============================================================
+     PAGE : CONDITIONS D'UTILISATION
+     ============================================================ -->
+<section class="page" id="page-conditions" aria-label="Conditions d'utilisation">
+  <header class="page-hero">
+    <div class="container position-relative">
+      <p class="crumb"><a href="#/accueil" data-route="accueil">Accueil</a> <i class="bi bi-chevron-right mx-1"></i> Conditions d'utilisation</p>
+      <h1 class="mt-2">Conditions générales d'utilisation</h1>
+    </div>
+  </header>
+  <div class="section">
+    <div class="container" style="max-width:820px">
+      <div class="diag-panel">
+        <h2 class="fs-5 fw-bold">1. Objet</h2>
+        <p class="text-secondary">Les présentes conditions encadrent l'utilisation du site digitalsupporttech.fr et des services proposés par Digital Support Tech : support technique, maintenance, dépannage, installation et récupération de données.</p>
+        <h2 class="fs-5 fw-bold mt-4">2. Devis et prestations</h2>
+        <p class="text-secondary">Toute intervention fait l'objet d'un devis gratuit et détaillé, validé par le client avant le début des travaux. Le prix annoncé est ferme et définitif. Aucun frais caché ne sera appliqué.</p>
+        <h2 class="fs-5 fw-bold mt-4">3. Garantie</h2>
+        <p class="text-secondary">Nos interventions sont garanties 30 jours. En cas de récidive du même problème, l'intervention de reprise est effectuée gratuitement. La garantie ne couvre pas les dommages dus à un usage anormal ou à une défaillance matérielle indépendante.</p>
+        <h2 class="fs-5 fw-bold mt-4">4. Responsabilité des données</h2>
+        <p class="text-secondary">Il est recommandé de sauvegarder vos données avant toute intervention. Digital Support Tech met en œuvre tous les moyens pour préserver vos fichiers mais ne peut garantir la récupération en cas de défaillance matérielle avancée, ce qui fait l'objet d'une information préalable systématique.</p>
+        <h2 class="fs-5 fw-bold mt-4">5. Assistance à distance</h2>
+        <p class="text-secondary">L'assistance à distance s'effectue via des outils sécurisés (AnyDesk, UltraViewer). Le client reste maître de la session et peut l'interrompre à tout moment. Aucun mot de passe personnel n'est demandé.</p>
+        <h2 class="fs-5 fw-bold mt-4">6. Droit applicable</h2>
+        <p class="text-secondary">Les présentes conditions sont soumises au droit français. Tout litige relève des tribunaux compétents de Paris, après tentative de résolution amiable.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+</main>
+
+<!-- ============================================================
+     FOOTER
+     ============================================================ -->
+<footer class="footer">
+  <div class="container">
+    <div class="row g-4">
+      <div class="col-lg-4">
+        <a class="brand-logo mb-3 d-inline-flex" href="#/accueil" data-route="accueil">
+          <span class="logo-mark"><img src="logo.png" alt=""></span>
+          <span class="brand-name" style="color:#fff">DIGITAL SUPPORT TECH<small style="color:#2EA8FF">Expert informatique</small></span>
+        </a>
+        <p class="mt-3 small" style="color:rgba(255,255,255,.65)">Votre partenaire de confiance pour le support technique, la maintenance et la sécurité de vos équipements informatiques. Sur place ou à distance, 24 h/7 j.</p>
+        <div class="social mt-3">
+          <a href="https://www.facebook.com/profile.php?id=100086606282842" target="_blank" rel="noopener" aria-label="Facebook"><i class="bi bi-facebook"></i></a>
+          <a href="https://wa.me/22655757299" target="_blank" rel="noopener" aria-label="WhatsApp"><i class="bi bi-whatsapp"></i></a>
+        </div>
+      </div>
+      <div class="col-6 col-lg-2">
+        <h5>Liens rapides</h5>
+        <a href="#/accueil" data-route="accueil"><i class="bi bi-chevron-right small"></i>Accueil</a>
+        <a href="#/diagnostic" data-route="diagnostic"><i class="bi bi-chevron-right small"></i>Diagnostic</a>
+        <a href="#/guides" data-route="guides"><i class="bi bi-chevron-right small"></i>Guides</a>
+        <a href="#/blog" data-route="blog"><i class="bi bi-chevron-right small"></i>Blog</a>
+        <a href="#/faq" data-route="faq"><i class="bi bi-chevron-right small"></i>FAQ</a>
+        <a href="#/apropos" data-route="apropos"><i class="bi bi-chevron-right small"></i>À propos</a>
+      </div>
+      <div class="col-6 col-lg-3">
+        <h5>Nos services</h5>
+        <a href="#/services" data-route="services"><i class="bi bi-chevron-right small"></i>Maintenance informatique</a>
+        <a href="#/services" data-route="services"><i class="bi bi-chevron-right small"></i>Installation Windows & Office</a>
+        <a href="#/services" data-route="services"><i class="bi bi-chevron-right small"></i>Antivirus & suppression virus</a>
+        <a href="#/services" data-route="services"><i class="bi bi-chevron-right small"></i>Optimisation PC</a>
+        <a href="#/services" data-route="services"><i class="bi bi-chevron-right small"></i>Sauvegarde & récupération</a>
+        <a href="#/services" data-route="services"><i class="bi bi-chevron-right small"></i>Assistance à distance</a>
+      </div>
+      <div class="col-lg-3">
+        <h5>Coordonnées</h5>
+        <p class="small mb-2" style="color:rgba(255,255,255,.7)"><i class="bi bi-geo-alt me-2 text-primary-light"></i>Bobo-Dioulasso, Burkina-Faso (à distance)</p>
+        <p class="small mb-2" style="color:rgba(255,255,255,.7)"><i class="bi bi-telephone me-2" style="color:#2EA8FF"></i><a href="tel:+22654511437" style="color:inherit">+226 54 51 14 37</a></p>
+        <p class="small mb-2" style="color:rgba(255,255,255,.7)"><i class="bi bi-envelope me-2" style="color:#2EA8FF"></i><a href="mailto:contact@digitalsupporttech.fr" style="color:inherit">lamiendonaldo179@gmail.com</a></p>
+        <p class="small" style="color:rgba(255,255,255,.7)"><i class="bi bi-clock me-2" style="color:#2EA8FF"></i>Lun–Ven : 8 h – 22 h · Sam : 9 h – 20 h</p>
+        <a href="#/contact" class="btn btn-brand btn-sm mt-2" data-route="contact"><i class="bi bi-headset me-1"></i>Demander une assistance</a>
+      </div>
+    </div>
+    <div class="footer-bottom d-flex flex-column flex-md-row justify-content-between align-items-center gap-2">
+      <span>© <span id="year"></span> Digital Support Tech — Tous droits réservés.</span>
+      <span class="d-flex gap-3">
+        <a href="#/confidentialite" data-route="confidentialite">Politique de confidentialité</a>
+        <a href="#/conditions" data-route="conditions">Conditions d'utilisation</a>
+      </span>
+    </div>
+  </div>
+</footer>
+
+<!-- Boutons flottants -->
+<a href="https://wa.me/22655757299?text=Bonjour%2C%20j%27ai%20besoin%20d%27aide%20informatique." class="fab-wa" target="_blank" rel="noopener" aria-label="Discuter sur WhatsApp"><i class="bi bi-whatsapp"></i></a>
+<button class="fab-top" id="fabTop" aria-label="Revenir en haut de page"><i class="bi bi-arrow-up"></i></button>
+
+<!-- Modal service (détail) -->
+<div class="modal fade" id="serviceModal" tabindex="-1" aria-labelledby="serviceModalTitle" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered modal-lg">
+    <div class="modal-content">
+      <div class="modal-header modal-header-dst border-0">
+        <div class="d-flex align-items-center gap-3">
+          <span id="smIcon" style="width:54px;height:54px;border-radius:14px;background:rgba(255,255,255,.15);display:grid;place-items:center;font-size:1.6rem"></span>
+          <h3 class="modal-title fs-4 fw-bold mb-0" id="serviceModalTitle">Service</h3>
+        </div>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Fermer"></button>
+      </div>
+      <div class="modal-body p-4">
+        <p id="smDesc" class="text-secondary"></p>
+        <h4 class="fs-6 fw-bold mt-3 mb-2"><i class="bi bi-check2-circle text-primary me-2"></i>Ce que comprend le service</h4>
+        <ul id="smBenefits" class="list-unstyled"></ul>
+        <div class="d-flex flex-wrap gap-3 mt-4">
+          <!-- Ajout d'un id="waServiceLink" pour cibler facilement le bouton -->
+          <a href="#" id="waServiceLink" target="_blank" rel="noopener" class="btn btn-brand" data-route="contact">
+            <i class="bi bi-headset me-2"></i>Demander ce service
+          </a>
+          <a href="https://wa.me/22655757299?text=Bonjour%2C%20je%20souhaite%20des%20informations%20sur%20un%20service." target="_blank" rel="noopener" class="btn btn-wa">
+            <i class="bi bi-whatsapp me-2"></i>WhatsApp
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Bootstrap JS -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+<script>
+/* ============================================================
+   DIGITAL SUPPORT TECH — Application JavaScript (ES6)
+   Modules : Données · Routeur · Rendu · Animations · Interactions
+   ============================================================ */
+'use strict';
+
+/* ------------------------------------------------------------
+   1. DONNÉES
+   ------------------------------------------------------------ */
+const SERVICES = [
+  { id:'maintenance', icon:'bi-gear', title:'Maintenance informatique',
+    desc:'Entretien régulier de vos équipements pour prévenir les pannes et prolonger leur durée de vie.',
+    long:'Contrat ou intervention ponctuelle : nous planifions les mises à jour, nettoyons votre système et vérifions l’état de santé de votre matériel. Idéal pour les entreprises qui veulent zéro interruption.',
+    benefits:['Planification des mises à jour et correctifs','Nettoyage préventif logiciel et matériel','Rapport d’intervention détaillé','Priorité d’assistance pour les contrats'] },
+  { id:'installation-windows', icon:'bi-windows', title:'Installation Windows',
+    desc:'Installation propre et optimisée de Windows 10 ou Windows 11, avec transfert de vos fichiers.',
+    long:'Nous installons Windows depuis une source officielle, activons votre licence, installons les pilotes et configurons le système pour des performances optimales. Vos fichiers sont sauvegardés puis restaurés.',
+    benefits:['Installation et activation de la licence','Transfert sécurisé de vos fichiers','Installation des pilotes à jour','Configuration optimale et débloatage'] },
+  { id:'office', icon:'bi-microsoft', title:'Microsoft Office / 365',
+    desc:'Installation, activation et configuration de Microsoft 365, Office 2021 ou Office 2019.',
+    long:'Word, Excel, PowerPoint, Outlook… Nous installons votre suite Office, activons votre compte Microsoft et configurons votre boîte mail. Nous formons également vos équipes aux fonctions essentielles.',
+    benefits:['Installation de la suite complète','Activation du compte Microsoft','Configuration d’Outlook et de la messagerie','Aide à la migration depuis d’anciennes versions'] },
+  { id:'antivirus', icon:'bi-shield-check', title:'Installation Antivirus',
+    desc:'Protection complète contre virus, ransomwares et menaces en ligne avec les meilleurs antivirus.',
+    long:'Nous installons et configurons un antivirus adapté à votre usage (particulier ou entreprise), optimisons ses réglages pour un impact minimal sur les performances et vérifions la protection en conditions réelles.',
+    benefits:['Choix de l’antivirus adapté à votre usage','Configuration des analyses automatiques','Protection contre les ransomwares','Contrôle de protection en fin d’installation'] },
+  { id:'optimisation', icon:'bi-speedometer2', title:'Optimisation PC',
+    desc:'PC lent, démarrage long, surchauffe ? Nous redonnons de la vitesse à votre machine.',
+    long:'Analyse complète des performances : nettoyage des fichiers temporaires, désactivation des programmes au démarrage, défragmentation SSD/HDD, refroidissement et mise à niveau matérielle si nécessaire (RAM, SSD).',
+    benefits:['Démarrage accéléré jusqu’à 70 %','Nettoyage logiciel en profondeur','Mise à niveau RAM / SSD conseillée','Test de performance avant / après'] },
+  { id:'virus', icon:'bi-bug', title:'Suppression de virus',
+    desc:'Élimination des virus, malwares, adwares et ransomwares avec récupération de vos données.',
+    long:'Diagnostic complet du système, isolation et suppression des menaces, réparation des fichiers endommagés et durcissement de la sécurité pour éviter toute réinfection.',
+    benefits:['Scan approfondi multi-moteurs','Suppression des menaces actives','Réparation des fichiers système','Conseils pour éviter la réinfection'] },
+  { id:'sauvegarde', icon:'bi-cloud-arrow-up', title:'Sauvegarde de données',
+    desc:'Mise en place de sauvegardes automatiques, locales ou cloud, pour ne plus jamais perdre vos fichiers.',
+    long:'Nous concevons une stratégie de sauvegarde adaptée (disque externe, NAS, cloud chiffré) et automatisons les sauvegardes. Vos photos, documents et bases de données sont protégés en continu.',
+    benefits:['Stratégie de sauvegarde sur mesure','Automatisation 3-2-1 (3 copies, 2 supports, 1 hors site)','Chiffrement des données','Test de restauration régulier'] },
+  { id:'recuperation', icon:'bi-database-up', title:'Récupération de données',
+    desc:'Récupération de fichiers supprimés, disques défaillants, clés USB ou cartes mémoire endommagées.',
+    long:'Intervention sur disques durs, SSD, clés USB et cartes mémoire : fichiers supprimés accidentellement, partition formatée, disque qui ne s’allume plus. Devis gratuit et taux de réussite élevé.',
+    benefits:['Devis gratuit avant intervention','Taux de récupération élevé','Travail en salle blanche pour disques endommagés','Confidentialité garantie'] },
+  { id:'distance', icon:'bi-headset', title:'Assistance à distance',
+    desc:'Prise en main sécurisée de votre ordinateur via AnyDesk ou UltraViewer pour un dépannage express.',
+    long:'En moins de 30 minutes, un technicien prend la main sur votre PC en toute sécurité : installation, dépannage, optimisation… sans vous déplacer. Vous gardez le contrôle de la session à tout moment.',
+    benefits:['Intervention en moins de 30 minutes','Session chiffrée de bout en bout','Vous gardez le contrôle à tout moment','Tarif forfaitaire transparent'] }
+];
+
+const DIAGNOSTICS = [
+  { id:'son', emoji:'🔊', label:'Pas de son',
+    steps:[
+      { q:'Vérifiez le volume système', detail:'Cliquez sur l’icône haut-parleur (en bas à droite) et assurez-vous que le volume n’est pas coupé et que le curseur n’est pas à zéro.' },
+      { q:'Vérifiez le périphérique de sortie', detail:'Assurez-vous que vos haut-parleurs ou écouteurs sont bien sélectionnés comme périphérique par défaut (clic droit sur l’icône son → Ouvrir les paramètres du son).' },
+      { q:'Testez un autre périphérique', detail:'Branchez des écouteurs sur une autre prise. Si le son fonctionne, le problème vient de vos haut-parleurs ; sinon, il vient du système ou des pilotes.' }
+    ],
+    causes:['Périphérique audio non sélectionné','Pilotes audio obsolètes ou corrompus','Haut-parleurs débranchés ou défectueux','Service Windows Audio arrêté'],
+    solutions:['Redémarrer le service Windows Audio (services.msc)','Réinstaller les pilotes audio depuis le gestionnaire de périphériques','Vérifier les connexions physiques et les prises jack/USB','Faire un diagnostic complet du matériel audio'] },
+  { id:'internet', emoji:'🌐', label:'Pas d’Internet',
+    steps:[
+      { q:'Vérifiez l’état de la connexion', detail:'Regardez l’icône réseau en bas à droite : points d’exclamation, croix ou « Pas d’accès Internet » indiquent un problème de connexion.' },
+      { q:'Testez un autre appareil', detail:'Connectez votre smartphone au même Wi-Fi. Si Internet fonctionne, le problème vient de votre PC ; sinon, de la box ou du fournisseur.' },
+      { q:'Redémarrez la box et le PC', detail:'Éteignez la box pendant 30 secondes, rallumez-la, puis redémarrez votre ordinateur. Cela résout la majorité des pannes réseau.' }
+    ],
+    causes:['Routeur / box en panne ou en surcharge','Pilotes réseau obsolètes','Adresse IP ou DNS corrompus','Carte réseau désactivée ou défectueuse'],
+    solutions:['Redémarrer box et ordinateur','Exécuter l’utilitaire de résolution des problèmes réseau','Réinitialiser la pile TCP/IP et les DNS (netsh winsock reset)','Mettre à jour les pilotes de la carte réseau'] },
+  { id:'lent', emoji:'🐢', label:'PC lent',
+    steps:[
+      { q:'Observez le démarrage', detail:'Un démarrage de plus de 2 minutes signale souvent trop de programmes lancés automatiquement au démarrage de Windows.' },
+      { q:'Vérifiez l’espace disque', detail:'Ouvrez Ce PC et contrôlez l’espace libre de votre disque C:. S’il reste moins de 15 % d’espace, le système ralentit fortement.' },
+      { q:'Ouvrez le Gestionnaire des tâches', detail:'(Ctrl + Maj + Échap) : triez par « Utilisation CPU » et repérez les processus qui consomment anormalement de la ressource.' }
+    ],
+    causes:['Trop de programmes au démarrage','Disque presque plein (moins de 15 % libres)','Virus ou programmes espions en arrière-plan','Disque dur mécanique (HDD) vieillissant'],
+    solutions:['Désactiver les programmes inutiles au démarrage','Nettoyer le disque (fichiers temporaires, cache)','Analyser le PC avec un antivirus à jour','Passer au SSD : démarrage jusqu’à 5× plus rapide'] },
+  { id:'virus', emoji:'🦠', label:'Virus / pop-ups',
+    steps:[
+      { q:'Repérez les symptômes', detail:'Pop-ups intempestifs, page d’accueil modifiée, PC très lent, fichiers chiffrés (.lock, .crypt) ou messages « ransom » : ce sont des signes d’infection.' },
+      { q:'Coupez Internet', detail:'Déconnectez le PC du réseau (Wi-Fi ou câble) pour empêcher le virus de communiquer avec ses serveurs ou de se propager.' },
+      { q:'Ne payez jamais de rançon', detail:'En cas de ransomware, ne payez pas : rien ne garantit la récupération. Éteignez le PC et contactez un professionnel immédiatement.' }
+    ],
+    causes:['Téléchargements ou pièces jointes malveillants','Fausses mises à jour de logiciels','Clés USB infectées','Extensions de navigateur malveillantes'],
+    solutions:['Scanner avec un antivirus à jour en mode sans échec','Supprimer les extensions et programmes suspects','Utiliser un outil de désinfection spécialisé (AdwCleaner, Malwarebytes)','Restaurer le système à un point antérieur si nécessaire'] },
+  { id:'update', emoji:'⚠️', label:'Windows Update bloqué',
+    steps:[
+      { q:'Vérifiez la connexion Internet', detail:'Windows Update nécessite une connexion stable. Vérifiez que les autres sites se chargent correctement.' },
+      { q:'Libérez de l’espace disque', detail:'Les mises à jour majeures exigent plusieurs Go d’espace libre. Vérifiez l’espace du disque C:. Il faut au moins 20 Go libres pour une mise à jour de fonctionnalité.' },
+      { q:'Vérifiez l’alimentation', detail:'Pour un ordinateur portable, branchez l’adaptateur secteur : Windows refuse d’installer certaines mises à jour sur batterie.' }
+    ],
+    causes:['Espace disque insuffisant','Services Windows Update arrêtés ou corrompus','Cache de mise à jour endommagé','Conflit avec un antivirus tiers'],
+    solutions:['Exécuter l’utilitaire de résolution des problèmes Windows Update','Vider le cache (dossier SoftwareDistribution)','Réinitialiser les services Windows Update (wuauserv, bits)','Redémarrer le service avec les commandes net stop/start'] },
+  { id:'disque', emoji:'💾', label:'Disque plein',
+    steps:[
+      { q:'Identifiez ce qui occupe l’espace', detail:'Ouvrez Paramètres → Système → Stockage. La vue détaillée montre ce qui consomme : applications, fichiers temporaires, vidéos…' },
+      { q:'Videz les fichiers temporaires', detail:'Utilisez l’outil « Nettoyage de disque » de Windows puis « Nettoyer les fichiers système » pour libérer plusieurs Go.' },
+      { q:'Déplacez vos gros fichiers', detail:'Vidéos, photos et téléchargements peuvent être déplacés vers un disque externe ou le cloud sans perte de données.' }
+    ],
+    causes:['Fichiers temporaires et caches accumulés','Téléchargements et documents volumineux','Points de restauration système nombreux','Applications installées en masse'],
+    solutions:['Lancer le Nettoyage de disque puis « Nettoyer les fichiers système »','Déplacer les bibliothèques vers un autre disque','Réduire la taille réservée à la restauration système','Étendre la partition ou remplacer par un disque plus grand'] },
+  { id:'ecran-bleu', emoji:'🖥️', label:'Écran bleu (BSOD)',
+    steps:[
+      { q:'Notez le code d’erreur', detail:'L’écran bleu affiche un code (ex : CRITICAL_PROCESS_DIED, MEMORY_MANAGEMENT, VIDEO_TDR_FAILURE). Notez-le, il oriente le diagnostic.' },
+      { q:'Testez la mémoire', detail:'Une erreur liée à la mémoire est souvent due à une barrette RAM défectueuse. Windows dispose d’un outil de diagnostic mémoire intégré.' },
+      { q:'Vérifiez l’historique', detail:'L’écran bleu apparaît-il au démarrage, pendant une tâche lourde ou de façon aléatoire ? La fréquence et le contexte sont essentiels.' }
+    ],
+    causes:['Pilotes incompatibles ou corrompus','Barrette RAM défectueuse','Surchauffe du processeur ou de la carte graphique','Disque dur avec secteurs défectueux'],
+    solutions:['Analyser le code d’erreur et les journaux d’événements','Exécuter le diagnostic mémoire de Windows','Mettre à jour les pilotes et le BIOS','Faire un test de disque (CHKDSK) et vérifier la température'] },
+  { id:'demarrage', emoji:'⏻', label:'PC ne démarre pas',
+    steps:[
+      { q:'Vérifiez l’alimentation', detail:'Le voyant s’allume-t-il ? Les ventilateurs tournent-ils ? Un PC totalement muet indique souvent un problème d’alimentation ou de câble.' },
+      { q:'Testez l’écran', detail:'Le PC émet des bruits de fonctionnement mais l’écran reste noir ? Vérifiez le câble vidéo ou essayez un autre écran.' },
+      { q:'Écoutez les bips', detail:'Des bips au démarrage sont un langage : 1 bip long = mémoire, bips répétés = carte graphique… Notez-les pour le technicien.' }
+    ],
+    causes:['Bloc d’alimentation défectueux','Barrette RAM mal enfoncée ou défectueuse','Câbles d’alimentation ou vidéo débranchés','Disque système défaillant ou Windows corrompu'],
+    solutions:['Vérifier les branchements internes et externes','Reseater les barrettes de mémoire','Démarrer sur une clé de récupération Windows','Faire diagnostiquer le matériel par un professionnel'] }
+];
+
+const GUIDES = [
+  { icon:'bi-windows', cat:'Windows', title:'Réparer le démarrage de Windows 10/11', desc:'Réparez automatiquement les fichiers de démarrage endommagés avec l’invite de commandes, sans perdre vos données.', time:'15 min', level:'Intermédiaire' },
+  { icon:'bi-windows', cat:'Windows', title:'Créer un point de restauration Windows', desc:'Mettez en place un point de restauration pour revenir en arrière en cas de problème système.', time:'10 min', level:'Débutant' },
+  { icon:'bi-windows', cat:'Windows', title:'Mettre à jour Windows correctement', desc:'Évitez les blocages de mise à jour avec notre méthode pas à pas : espace, services et cache.', time:'20 min', level:'Débutant' },
+  { icon:'bi-microsoft', cat:'Office', title:'Installer Microsoft 365 sans erreur', desc:'Installez et activez Microsoft 365 en quelques minutes, avec résolution des erreurs courantes.', time:'15 min', level:'Débutant' },
+  { icon:'bi-file-earmark-word', cat:'Office', title:'Récupérer un document Word non enregistré', desc:'Retrouvez vos fichiers Word perdus grâce aux fichiers de récupération automatique.', time:'10 min', level:'Débutant' },
+  { icon:'bi-speedometer2', cat:'Optimisation', title:'Accélérer le démarrage de Windows', desc:'Désactivez les programmes inutiles et optimisez votre session de démarrage pas à pas.', time:'15 min', level:'Débutant' },
+  { icon:'bi-hdd', cat:'Optimisation', title:'Passer au SSD : le guide complet', desc:'Pourquoi et comment migrer vers un SSD : clonage du disque, installation et vérification.', time:'60 min', level:'Avancé' },
+  { icon:'bi-trash', cat:'Optimisation', title:'Nettoyer son disque dur en profondeur', desc:'Libérez plusieurs Go avec le nettoyage de disque, les fichiers temporaires et les caches.', time:'20 min', level:'Débutant' },
+  { icon:'bi-shield-check', cat:'Sécurité', title:'Supprimer un virus sans perdre ses données', desc:'Protocole de désinfection complet : mode sans échec, scans multiples, réparation système.', time:'45 min', level:'Intermédiaire' },
+  { icon:'bi-key', cat:'Sécurité', title:'Créer des mots de passe impossibles à pirater', desc:'Générez et gérez des mots de passe forts avec un gestionnaire sécurisé.', time:'10 min', level:'Débutant' },
+  { icon:'bi-wifi', cat:'Internet', title:'Résoudre une connexion Wi-Fi lente', desc:'Diagnostic complet : canaux, interférences, position de la box et pilotes réseau.', time:'25 min', level:'Intermédiaire' },
+  { icon:'bi-printer', cat:'Matériel', title:'Configurer une imprimante sans fil', desc:'Connectez votre imprimante au Wi-Fi et au PC, avec résolution des erreurs classiques.', time:'20 min', level:'Débutant' },
+  { icon:'bi-fan', cat:'Matériel', title:'Nettoyer son ordinateur pour éviter la surchauffe', desc:'Poussière, pâte thermique, ventilation : les gestes qui prolongent la vie de votre PC.', time:'40 min', level:'Avancé' },
+  { icon:'bi-memory', cat:'Matériel', title:'Changer sa RAM : les étapes à connaître', desc:'Choisissez la bonne mémoire et installez-la en toute sécurité pour booster vos performances.', time:'30 min', level:'Avancé' }
+];
+
+const POSTS = [
+  { id:1, title:'5 signes que votre PC a besoin d’un diagnostic', cat:'Conseils', date:'12 février 2025', read:'4 min', img:'https://images.pexels.com/photos/6754846/pexels-photo-6754846.jpeg?auto=compress&cs=tinysrgb&fit=crop&h=627&w=1200', excerpt:'Votre ordinateur vous parle… encore faut-il savoir l’écouter. Voici les 5 signes qui indiquent qu’une intervention est nécessaire avant la panne fatale.' },
+  { id:2, title:'Windows 11 : faut-il passer à la mise à jour ?', cat:'Windows', date:'28 janvier 2025', read:'6 min', img:'https://images.pexels.com/photos/574086/pexels-photo-574086.jpeg?auto=compress&cs=tinysrgb&fit=crop&h=627&w=1200', excerpt:'Compatibilité, performances, sécurité : nous faisons le point sur Windows 11 et vous aidons à décider en connaissance de cause.' },
+  { id:3, title:'Comment supprimer un virus sans perdre ses données', cat:'Sécurité', date:'15 janvier 2025', read:'7 min', img:'https://images.pexels.com/photos/8471905/pexels-photo-8471905.jpeg?auto=compress&cs=tinysrgb&fit=crop&h=627&w=1200', excerpt:'La panique est la première erreur face à un virus. Découvrez le protocole professionnel pour désinfecter votre PC tout en protégeant vos fichiers.' },
+  { id:4, title:'SSD vs HDD : pourquoi le passage au SSD change tout', cat:'Matériel', date:'3 janvier 2025', read:'5 min', img:'https://images.pexels.com/photos/10558598/pexels-photo-10558598.jpeg?auto=compress&cs=tinysrgb&fit=crop&h=627&w=1200', excerpt:'Démarrage en 10 secondes, applications instantanées : on vous explique pourquoi le SSD est l’upgrade la plus rentable pour votre PC.' },
+  { id:5, title:'Sauvegarder ses données : le guide complet', cat:'Conseils', date:'20 décembre 2024', read:'8 min', img:'https://images.pexels.com/photos/291777/pexels-photo-291777.jpeg?auto=compress&cs=tinysrgb&fit=crop&h=627&w=1200', excerpt:'Règle du 3-2-1, sauvegarde cloud chiffrée, NAS… Mettez en place une stratégie de sauvegarde que même les entreprises vous envieraient.' },
+  { id:6, title:'Assistance à distance : comment ça marche ?', cat:'Services', date:'10 décembre 2024', read:'4 min', img:'https://images.pexels.com/photos/12863086/pexels-photo-12863086.jpeg?auto=compress&cs=tinysrgb&fit=crop&h=627&w=1200', excerpt:'AnyDesk, UltraViewer : on vous explique comment un technicien prend la main sur votre PC en toute sécurité et pourquoi c’est si efficace.' },
+  { id:7, title:'PC lent au démarrage : les causes cachées', cat:'Optimisation', date:'28 novembre 2024', read:'5 min', img:'https://images.pexels.com/photos/129205/pexels-photo-129205.jpeg?auto=compress&cs=tinysrgb&fit=crop&h=627&w=1200', excerpt:'Votre PC met 5 minutes à démarrer ? Derrière ce symptôme se cachent souvent des programmes invisibles qui saturent votre système.' },
+  { id:8, title:'Écran bleu : comprendre et résoudre l’erreur', cat:'Windows', date:'15 novembre 2024', read:'6 min', img:'https://images.pexels.com/photos/10558600/pexels-photo-10558600.jpeg?auto=compress&cs=tinysrgb&fit=crop&h=627&w=1200', excerpt:'CRITICAL_PROCESS_DIED, MEMORY_MANAGEMENT… Apprenez à déchiffrer les codes d’erreur de l’écran bleu et à agir efficacement.' },
+  { id:9, title:'Choisir son antivirus en 2025 : le comparatif', cat:'Sécurité', date:'2 novembre 2024', read:'7 min', img:'https://images.pexels.com/photos/4792713/pexels-photo-4792713.jpeg?auto=compress&cs=tinysrgb&fit=crop&h=627&w=1200', excerpt:'Gratuit ou payant ? Windows Defender suffit-il ? Notre comparatif 2025 pour une protection sans compromis sur les performances.' }
+];
+
+const DOWNLOADS = [
+  { name:'Windows 11', cat:'Windows', icon:'bi-windows', color:'#0057D9', desc:'Outil de création de support officiel Microsoft pour installer ou réinstaller Windows 11.', size:'~6 Go', ver:'23H2', url:'https://www.justgeek.fr/goto/windows-11-25h2-64-bits/' },
+  { name:'Windows 10', cat:'Windows', icon:'bi-windows', color:'#0057D9', desc:'Téléchargement officiel de l’outil de création de support Windows 10.', size:'~5 Go', ver:'22H2', url:'https://www.justgeek.fr/goto/windows-10-64-bits/' },
+  { name:'Microsoft 365', cat:'Office', icon:'bi-microsoft', color:'#C43E1C', desc:'Suite Office complète (Word, Excel, PowerPoint) — version d’essai ou abonnement.', size:'—', ver:'2024', url:'https://www.microsoft.com/fr-fr/microsoft-365' },
+  { name:'AnyDesk', cat:'Outils', icon:'bi-display', color:'#EF443B', desc:'Logiciel d’assistance à distance rapide et sécurisé, recommandé par nos techniciens.', size:'~4 Mo', ver:'8.x', url:'https://anydesk.com/fr/downloads/thank-you?dv=win_exe' },
+  { name:'UltraViewer', cat:'Outils', icon:'bi-eye', color:'#2EA8FF', desc:'Outil gratuit de prise en main à distance, simple et léger, pour Windows.', size:'~2 Mo', ver:'6.6', url:'https://www.ultraviewer.net/en/UltraViewer_setup_6.6_en.exe' },
+  { name:'Google Chrome', cat:'Navigateurs', icon:'bi-globe', color:'#4285F4', desc:'Navigateur rapide et sécurisé avec synchronisation multi-appareils.', size:'~100 Mo', ver:'132', url:'https://dl.google.com/tag/s/appguid%3D%7B8A69D345-D564-463C-AFF1-A69D9E530F96%7D%26iid%3D%7B3F971708-101D-5B3D-5B39-034212A85FBA%7D%26lang%3Dfr%26browser%3D4%26usagestats%3D1%26appname%3DGoogle%2520Chrome%26needsadmin%3Dprefers%26ap%3D-arch_x64-statsdef_1%26installdataindex%3Dempty/update2/installers/ChromeSetup.exe' },
+  { name:'Mozilla Firefox', cat:'Navigateurs', icon:'bi-fire', color:'#FF7139', desc:'Navigateur open-source respectueux de la vie privée, très performant.', size:'~60 Mo', ver:'133', url:'https://download.mozilla.org/?product=firefox-stub&os=win&lang=fr' },
+  { name:'7-Zip', cat:'Utilitaires', icon:'bi-archive', color:'#1F4E9C', desc:'Compresseur / décompresseur gratuit, léger et puissant (ZIP, RAR, 7z…).', size:'~2 Mo', ver:'24.09', url:'https://www.clubic.com/telecharger-fiche11161-7-zip.html?file=32905&launched=true' },
+  { name:'Adobe Acrobat Reader', cat:'Utilitaires', icon:'bi-file-earmark-pdf', color:'#EE3F24', desc:'Lecteur PDF officiel et gratuit pour afficher et signer vos documents.', size:'~200 Mo', ver:'24.x', url:'https://www.clubic.com/telecharger-fiche431723-acrobat-reader-dc.html?file=33733&launched=true' },
+  { name:'VLC Media Player', cat:'Utilitaires', icon:'bi-play-btn', color:'#F0821E', desc:'Lecteur multimédia universel : tous les formats, aucune conversion nécessaire.', size:'~40 Mo', ver:'3.0', url:'https://get.videolan.org/vlc/3.0.23/win64/vlc-3.0.23-win64.exe' },
+  { name:'Pilotes & drivers', cat:'Outils', icon:'bi-usb-plug', color:'#0A2D6B', desc:'Centre de téléchargement des pilotes officiels (Intel, AMD, NVIDIA, fabricants).', size:'—', ver:'—', url:'https://www.intel.com/content/www/us/en/download-center/home.html' },
+  { name:'Outils Microsoft', cat:'Outils', icon:'bi-tools', color:'#0057D9', desc:'Rufus, Autoruns, Sysinternals : la boîte à outils officielle pour diagnostiquer Windows.', size:'—', ver:'—', url:'https://learn.microsoft.com/fr-fr/sysinternals/' }
+];
+
+const FAQS = [
+  { q:'Intervenez-vous à distance ?', a:'Oui, dans la majorité des cas. Grâce à AnyDesk ou UltraViewer, un technicien prend la main sur votre ordinateur en toute sécurité pour un dépannage rapide, où que vous soyez en France. L’intervention sur site reste disponible à Paris et en Île-de-France.' },
+  { q:'Combien de temps dure un dépannage ?', a:'La plupart des dépannages à distance sont résolus en moins d’une heure. Une intervention sur site peut prendre de 1 à 3 heures selon la complexité. Le diagnostic préalable nous permet de vous donner un délai estimé précis.' },
+  { q:'Quels sont vos tarifs ?', a:'Le diagnostic et le devis sont gratuits et sans engagement. Nos tarifs sont forfaitaires et annoncés avant toute intervention : aucun frais caché, le prix affiché est le prix payé.' },
+  { q:'Récupérez-vous mes données si mon disque dur est endommagé ?', a:'Oui. Notre service de récupération de données intervient sur les disques défaillants, les fichiers supprimés accidentellement ou les partitions formatées. Le devis est gratuit et la confidentialité est garantie.' },
+  { q:'Mes données sont-elles en sécurité pendant une assistance à distance ?', a:'Absolument. Les sessions sont chiffrées de bout en bout, nous ne demandons jamais vos mots de passe personnels et vous gardez le contrôle de la session : vous pouvez l’interrompre à tout moment.' },
+  { q:'Travaillez-vous sur Mac ?', a:'Oui, nous assurons l’installation et la maintenance des Mac (macOS) pour les besoins courants. Notre cœur de métier reste Windows et Microsoft 365, très majoritaires chez nos clients.' },
+  { q:'Proposez-vous des contrats pour les entreprises ?', a:'Oui. Nos contrats de maintenance couvrent le parc informatique des PME, cabinets et associations : visites régulières, priorité d’assistance, gestion des mises à jour et rapport mensuel.' },
+  { q:'Que faire si mon PC ne démarre plus ?', a:'Ne forcez pas et ne tentez pas de manipulations risquées. Contactez-nous : nous diagnostiquons à distance ou sur place. Dans la plupart des cas, vos données sont récupérables.' },
+  { q:'Offrez-vous une garantie sur vos interventions ?', a:'Oui, toutes nos interventions sont garanties 30 jours. Si le même problème réapparaît, l’intervention de reprise est gratuite.' },
+  { q:'Puis-je vous contacter le week-end ?', a:'Oui. Nous sommes disponibles le samedi (10 h – 17 h) et assurons un service d’urgence 24 h/7 j pour les situations critiques en entreprise.' },
+  { q:'Quels moyens de paiement acceptez-vous ?', a:'Carte bancaire, virement, PayPal et espèces. Pour les entreprises, une facture est systématiquement émise, conforme aux normes en vigueur.' },
+  { q:'Fournissez-vous les licences Windows et Office ?', a:'Oui, nous vous conseillons sur les licences officielles adaptées à votre usage et nous les activons lors de l’installation. Nous ne proposons jamais de versions piratées.' }
+];
+
+/* ------------------------------------------------------------
+   2. ROUTEUR (hash) — SPA multi-pages
+   ------------------------------------------------------------ */
+const ROUTES = {
+  'accueil':'page-accueil','services':'page-services','diagnostic':'page-diagnostic',
+  'guides':'page-guides','blog':'page-blog','telechargements':'page-telechargements',
+  'faq':'page-faq','apropos':'page-apropos','contact':'page-contact',
+  'confidentialite':'page-confidentialite','conditions':'page-conditions'
+};
+const TITLES = {
+  'accueil':'Digital Support Tech — Support technique & maintenance informatique',
+  'services':'Nos services — Digital Support Tech',
+  'diagnostic':'Diagnostic interactif — Digital Support Tech',
+  'guides':'Guides pratiques — Digital Support Tech',
+  'blog':'Blog & conseils — Digital Support Tech',
+  'telechargements':'Téléchargements — Digital Support Tech',
+  'faq':'Questions fréquentes — Digital Support Tech',
+  'apropos':'À propos — Digital Support Tech',
+  'contact':'Contact — Digital Support Tech',
+  'confidentialite':'Politique de confidentialité — Digital Support Tech',
+  'conditions':'Conditions d’utilisation — Digital Support Tech'
+};
+
+function getRoute(){
+  const h = location.hash.replace(/^#\/?/, '').split('?')[0] || 'accueil';
+  return ROUTES[h] ? h : 'accueil';
+}
+
+function navigate(){
+  const route = getRoute();
+  const pageId = ROUTES[route];
+  document.querySelectorAll('.page').forEach(p => p.classList.remove('active'));
+  document.getElementById(pageId).classList.add('active');
+  document.title = TITLES[route] || TITLES.accueil;
+  // État actif du menu
+  document.querySelectorAll('[data-route]').forEach(a => {
+    a.classList.toggle('active', a.dataset.route === route && a.classList.contains('nav-link'));
+  });
+  // Fermer le menu mobile
+  const menu = document.getElementById('navMenu');
+  if (menu.classList.contains('show')) bootstrap.Collapse.getInstance(menu)?.hide();
+  window.scrollTo({ top:0, behavior:'instant' });
+  // Initialisations propres à chaque page
+  initPage(route);
+  observeReveals();
+  observeCounters();
+}
+
+function initPage(route){
+  if (route === 'blog') renderBlog();
+  if (route === 'telechargements') renderDownloads();
+  // Le champ sujet pré-rempli depuis le diagnostic
+  if (route === 'contact'){
+    const params = new URLSearchParams(location.hash.split('?')[1] || '');
+    const sujet = params.get('sujet');
+    if (sujet){
+      const sel = document.getElementById('cfService');
+      const opt = Array.from(sel.options).find(o => o.text.includes(sujet));
+      if (opt) sel.value = opt.text;
+    }
+  }
+}
+
+/* ------------------------------------------------------------
+   3. RENDU — Services
+   ------------------------------------------------------------ */
+function serviceCard(s){
+  return `
+  <div class="col-md-6 col-lg-4 reveal">
+    <article class="service-card">
+      <div class="service-icon"><i class="bi ${s.icon}"></i></div>
+      <h3>${s.title}</h3>
+      <p class="text-secondary" style="font-size:.9rem">${s.desc}</p>
+      <ul class="benefits">
+        ${s.benefits.slice(0,3).map(b => `<li><i class="bi bi-check-circle-fill"></i>${b}</li>`).join('')}
+      </ul>
+      <button class="btn btn-outline-brand btn-sm w-100" onclick="openService('${s.id}')">En savoir plus <i class="bi bi-arrow-right ms-1"></i></button>
+    </article>
+  </div>`;
+}
+
+function renderServices(){
+  const grid = document.getElementById('servicesGrid');
+  if (grid) grid.innerHTML = SERVICES.map(serviceCard).join('');
+  const home = document.getElementById('homeServices');
+  if (home) home.innerHTML = SERVICES.slice(0,6).map(serviceCard).join('');
+}
+
+function openService(id){
+  const s = SERVICES.find(x => x.id === id);
+  if (!s) return;
+  document.getElementById('smIcon').innerHTML = `<i class="bi ${s.icon}"></i>`;
+  document.getElementById('serviceModalTitle').textContent = s.title;
+  document.getElementById('smDesc').textContent = s.long;
+  document.getElementById('smBenefits').innerHTML = s.benefits.map(b => `<li class="d-flex gap-2 mb-2"><i class="bi bi-check2-circle text-primary"></i><span class="small">${b}</span></li>`).join('');
+  bootstrap.Modal.getOrCreateInstance(document.getElementById('serviceModal')).show();
+}
+
+/* ------------------------------------------------------------
+   4. RENDU — Diagnostic interactif
+   ------------------------------------------------------------ */
+function renderDiagnostic(){
+  document.getElementById('diagGrid').innerHTML = DIAGNOSTICS.map(d => `
+    <div class="col-6 col-md-3">
+      <button class="diag-card w-100 border-0" onclick="startDiagnostic('${d.id}')" aria-label="Diagnostic : ${d.label}">
+        <span class="emoji" aria-hidden="true">${d.emoji}</span>
+        <span class="d-label">${d.label}</span>
+      </button>
+    </div>`).join('');
+}
+
+let diagState = null;
+
+function startDiagnostic(id){
+  const d = DIAGNOSTICS.find(x => x.id === id);
+  if (!d) return;
+  diagState = { data:d, step:0 };
+  document.getElementById('diagStart').classList.add('d-none');
+  document.getElementById('diagPanel').classList.remove('d-none');
+  document.getElementById('diagEmoji').textContent = d.emoji;
+  document.getElementById('diagTitle').textContent = 'Diagnostic : ' + d.label;
+  renderDiagStep();
+  document.getElementById('diagPanel').scrollIntoView({ behavior:'smooth', block:'start' });
+}
+
+function renderDiagStep(){
+  const s = diagState;
+  const total = s.data.steps.length;
+  const pct = Math.round((s.step / (total + 1)) * 100);
+  document.getElementById('diagBar').style.width = pct + '%';
+  const step = s.data.steps[s.step];
+  let html = `
+    <div class="d-flex justify-content-between align-items-center mb-3">
+      <span class="chip">Étape ${s.step + 1} / ${total}</span>
+      <span class="text-secondary small">Vérification</span>
+    </div>
+    <div class="check-step">
+      <div class="cs-icon"><i class="bi bi-search"></i></div>
+      <div><h4>${step.q}</h4><p>${step.detail}</p></div>
+    </div>
+    <div class="d-flex flex-wrap gap-3 mt-4">
+      <button class="btn btn-brand" onclick="nextDiagStep()">C’est vérifié, continuer <i class="bi bi-arrow-right ms-1"></i></button>
+      ${s.step > 0 ? '<button class="btn btn-outline-brand" onclick="prevDiagStep()"><i class="bi bi-arrow-left me-1"></i> Retour</button>' : ''}
+    </div>`;
+  document.getElementById('diagContent').innerHTML = html;
+}
+
+function nextDiagStep(){
+  if (diagState.step < diagState.data.steps.length - 1){
+    diagState.step++;
+    renderDiagStep();
+  } else {
+    showDiagResult();
+  }
+}
+function prevDiagStep(){ diagState.step--; renderDiagStep(); }
+
+function showDiagResult(){
+  const d = diagState.data;
+  document.getElementById('diagBar').style.width = '100%';
+  const sujet = encodeURIComponent(d.label.replace(/[^a-zA-Zàâäéèêëîïôöùûüç ]/g,'').trim());
+  document.getElementById('diagContent').innerHTML = `
+    <div class="alert alert-success d-flex gap-3 align-items-start" role="status">
+      <i class="bi bi-clipboard2-pulse fs-4"></i>
+      <div><strong>Diagnostic terminé.</strong> Voici les causes probables et les premières solutions pour « ${d.label} ».</div>
+    </div>
+    <div class="row g-4 mt-1">
+      <div class="col-md-6">
+        <h4 class="fs-6 fw-bold mb-2"><i class="bi bi-search text-primary me-2"></i>Causes probables</h4>
+        <ul class="result-list">
+          ${d.causes.map(c => `<li><i class="bi bi-dot"></i>${c}</li>`).join('')}
+        </ul>
+      </div>
+      <div class="col-md-6">
+        <h4 class="fs-6 fw-bold mb-2"><i class="bi bi-tools text-primary me-2"></i>Premières solutions</h4>
+        <ul class="result-list sol">
+          ${d.solutions.map(c => `<li><i class="bi bi-check-circle-fill"></i>${c}</li>`).join('')}
+        </ul>
+      </div>
+    </div>
+    <div class="d-flex flex-wrap gap-3 mt-4 p-3 rounded-4" style="background:var(--bg-soft)">
+      <div class="flex-grow-1">
+        <strong class="d-block">Une solution complexe ?</strong>
+        <span class="text-secondary small">Nos techniciens résolvent ce problème en moyenne en moins d’une heure.</span>
+      </div>
+      <a href="#/contact?sujet=${sujet}" class="btn btn-brand" data-route="contact"><i class="bi bi-headset me-2"></i>Contacter un technicien</a>
+    </div>`;
+}
+
+function backToDiagStart(){
+  diagState = null;
+  document.getElementById('diagPanel').classList.add('d-none');
+  document.getElementById('diagStart').classList.remove('d-none');
+  document.getElementById('diagStart').scrollIntoView({ behavior:'smooth' });
+}
+document.getElementById('diagBack').addEventListener('click', backToDiagStart);
+
+/* ------------------------------------------------------------
+   5. RENDU — Guides (recherche instantanée + filtres)
+   ------------------------------------------------------------ */
+const guideState = { cat:'Tous', q:'' };
+const GUIDE_CATS = ['Tous', ...new Set(GUIDES.map(g => g.cat))];
+
+function renderGuideFilters(){
+  document.getElementById('guideFilters').innerHTML = GUIDE_CATS.map(c =>
+    `<button class="chip ${guideState.cat === c ? 'active' : ''}" onclick="setGuideCat('${c}')">${c}</button>`).join('');
+}
+
+function setGuideCat(c){ guideState.cat = c; renderGuideFilters(); renderGuides(); }
+
+function renderGuides(){
+  const q = guideState.q.toLowerCase();
+  const list = GUIDES.filter(g =>
+    (guideState.cat === 'Tous' || g.cat === guideState.cat) &&
+    (!q || (g.title + ' ' + g.desc + ' ' + g.cat).toLowerCase().includes(q)));
+  document.getElementById('guideCount').textContent = `${list.length} guide${list.length > 1 ? 's' : ''} trouvé${list.length > 1 ? 's' : ''}`;
+  document.getElementById('guidesGrid').innerHTML = list.length ? list.map(g => `
+    <div class="col-md-6 col-lg-4">
+      <article class="guide-card">
+        <div class="d-flex align-items-center justify-content-between">
+          <div class="g-icon"><i class="bi ${g.icon}"></i></div>
+          <span class="chip">${g.cat}</span>
+        </div>
+        <h3>${g.title}</h3>
+        <p>${g.desc}</p>
+        <div class="meta"><span><i class="bi bi-clock me-1"></i>${g.time}</span><span><i class="bi bi-bar-chart me-1"></i>${g.level}</span></div>
+      </article>
+    </div>`).join('') : '<p class="text-center text-secondary py-5 w-100">Aucun guide ne correspond à votre recherche.</p>';
+}
+document.getElementById('guideSearch').addEventListener('input', e => { guideState.q = e.target.value; renderGuides(); });
+
+/* ------------------------------------------------------------
+   6. RENDU — Blog (cartes, catégories, pagination, sidebar)
+   ------------------------------------------------------------ */
+const blogState = { page:1, perPage:6, cat:'Tous' };
+
+function renderBlog(){
+  const cats = ['Tous', ...new Set(POSTS.map(p => p.cat))];
+  document.getElementById('blogCategories').innerHTML = cats.map(c =>
+    `<a href="#" class="d-flex justify-content-between align-items-center py-2 border-bottom small ${blogState.cat === c ? 'fw-bold text-primary' : 'text-secondary'}" onclick="setBlogCat('${c}');return false;">
+      <span>${c}</span><span class="badge rounded-pill text-bg-light">${c === 'Tous' ? POSTS.length : POSTS.filter(p => p.cat === c).length}</span>
+    </a>`).join('');
+
+  document.getElementById('blogPopular').innerHTML = POSTS.slice(0,4).map(p => `
+    <div class="pop-item">
+      <img src="${p.img}" alt="${p.title}" loading="lazy">
+      <div><div class="t">${p.title}</div><div class="d">${p.date}</div></div>
+    </div>`).join('');
+
+  const filtered = blogState.cat === 'Tous' ? POSTS : POSTS.filter(p => p.cat === blogState.cat);
+  const pages = Math.max(1, Math.ceil(filtered.length / blogState.perPage));
+  if (blogState.page > pages) blogState.page = pages;
+  const start = (blogState.page - 1) * blogState.perPage;
+  const slice = filtered.slice(start, start + blogState.perPage);
+
+  document.getElementById('blogGrid').innerHTML = slice.map(p => `
+    <div class="col-md-6">
+      <article class="blog-card">
+        <div class="thumb">
+          <img src="${p.img}" alt="Illustration de l'article : ${p.title}" loading="lazy">
+          <span class="cat-badge">${p.cat}</span>
+        </div>
+        <div class="body">
+          <h3><a href="#/blog" onclick="return false">${p.title}</a></h3>
+          <p>${p.excerpt}</p>
+          <div class="meta"><span><i class="bi bi-calendar3 me-1"></i>${p.date}</span><span><i class="bi bi-clock me-1"></i>${p.read} de lecture</span></div>
+        </div>
+      </article>
+    </div>`).join('');
+
+  let pager = '<li class="page-item"><button class="page-link" onclick="blogPage(' + (blogState.page - 1) + ')" ' + (blogState.page === 1 ? 'disabled' : '') + ' aria-label="Page précédente"><i class="bi bi-chevron-left"></i></button></li>';
+  for (let i = 1; i <= pages; i++){
+    pager += `<li class="page-item ${i === blogState.page ? 'active' : ''}"><button class="page-link" onclick="blogPage(${i})">${i}</button></li>`;
+  }
+  pager += '<li class="page-item"><button class="page-link" onclick="blogPage(' + (blogState.page + 1) + ')" ' + (blogState.page === pages ? 'disabled' : '') + ' aria-label="Page suivante"><i class="bi bi-chevron-right"></i></button></li>';
+  document.getElementById('blogPagination').innerHTML = pager;
+}
+function blogPage(p){ blogState.page = p; renderBlog(); document.getElementById('blogGrid').scrollIntoView({behavior:'smooth'}); }
+function setBlogCat(c){ blogState.cat = c; blogState.page = 1; renderBlog(); }
+
+/* ------------------------------------------------------------
+   7. RENDU — Téléchargements (recherche + filtres)
+   ------------------------------------------------------------ */
+const dlState = { cat:'Tous', q:'' };
+const DL_CATS = ['Tous', ...new Set(DOWNLOADS.map(d => d.cat))];
+
+function renderDlFilters(){
+  document.getElementById('dlFilters').innerHTML = DL_CATS.map(c =>
+    `<button class="chip ${dlState.cat === c ? 'active' : ''}" onclick="setDlCat('${c}')">${c}</button>`).join('');
+}
+function setDlCat(c){ dlState.cat = c; renderDlFilters(); renderDownloads(); }
+
+function renderDownloads(){
+  const q = dlState.q.toLowerCase();
+  const list = DOWNLOADS.filter(d =>
+    (dlState.cat === 'Tous' || d.cat === dlState.cat) &&
+    (!q || (d.name + ' ' + d.desc).toLowerCase().includes(q)));
+  document.getElementById('dlGrid').innerHTML = list.length ? list.map(d => `
+    <div class="col-md-6 col-lg-4">
+      <article class="dl-card">
+        <div class="dl-head">
+          <div class="dl-icon" style="background:${d.color}"><i class="bi ${d.icon}"></i></div>
+          <div><h3>${d.name}</h3><span class="ver">Version ${d.ver}</span></div>
+        </div>
+        <p>${d.desc}</p>
+        <div class="d-flex justify-content-between align-items-center">
+          <span class="dl-badge">${d.size}</span>
+          <a href="${d.url}" target="_blank" rel="noopener nofollow" class="btn btn-outline-brand btn-sm"><i class="bi bi-download me-1"></i>Télécharger</a>
+        </div>
+      </article>
+    </div>`).join('') : '<p class="text-center text-secondary py-5 w-100">Aucun logiciel ne correspond à votre recherche.</p>';
+}
+document.getElementById('dlSearch').addEventListener('input', e => { dlState.q = e.target.value; renderDownloads(); });
+
+/* ------------------------------------------------------------
+   8. RENDU — FAQ (accordéon Bootstrap)
+   ------------------------------------------------------------ */
+function renderFaq(){
+  document.getElementById('faqAccordion').innerHTML = FAQS.map((f, i) => `
+    <div class="accordion-item">
+      <h2 class="accordion-header">
+        <button class="accordion-button ${i > 0 ? 'collapsed' : ''}" type="button" data-bs-toggle="collapse" data-bs-target="#faq${i}" aria-expanded="${i === 0}" aria-controls="faq${i}">
+          ${f.q}
+        </button>
+      </h2>
+      <div id="faq${i}" class="accordion-collapse collapse ${i === 0 ? 'show' : ''}" data-bs-parent="#faqAccordion">
+        <div class="accordion-body">${f.a}</div>
+      </div>
+    </div>`).join('');
+}
+
+/* ------------------------------------------------------------
+   9. RENDU — Blog d'accueil (3 derniers articles)
+   ------------------------------------------------------------ */
+function renderHomeBlog(){
+  document.getElementById('homeBlog').innerHTML = POSTS.slice(0,3).map(p => `
+    <div class="col-md-4 reveal" style="--d:.1s">
+      <article class="blog-card">
+        <div class="thumb">
+          <img src="${p.img}" alt="Illustration de l'article : ${p.title}" loading="lazy">
+          <span class="cat-badge">${p.cat}</span>
+        </div>
+        <div class="body">
+          <h3><a href="#/blog" onclick="return false">${p.title}</a></h3>
+          <p>${p.excerpt}</p>
+          <div class="meta"><span><i class="bi bi-calendar3 me-1"></i>${p.date}</span><span><i class="bi bi-clock me-1"></i>${p.read}</span></div>
+        </div>
+      </article>
+    </div>`).join('');
+}
+
+/* ------------------------------------------------------------
+   10. ANIMATIONS — Révélation au scroll + compteurs
+   ------------------------------------------------------------ */
+const revealObserver = new IntersectionObserver(entries => {
+  entries.forEach(e => { if (e.isIntersecting){ e.target.classList.add('visible'); revealObserver.unobserve(e.target); } });
+}, { threshold:.12 });
+
+function observeReveals(){
+  document.querySelectorAll('.reveal:not(.visible), .reveal-left:not(.visible), .reveal-right:not(.visible), .reveal-zoom:not(.visible)')
+    .forEach(el => revealObserver.observe(el));
+}
+
+document.addEventListener('DOMContentLoaded', function () {
+  const serviceModal = document.getElementById('serviceModal');
+  
+  if (serviceModal) {
+    serviceModal.addEventListener('show.bs.modal', function () {
+      // Récupère le titre actuel affiché dans la modale
+      const serviceTitle = document.getElementById('serviceModalTitle').textContent.trim();
+      
+      // Cible le lien WhatsApp "Demander ce service"
+      const waLink = document.getElementById('waServiceLink');
+      
+      if (waLink && serviceTitle) {
+        // Construit le message encodé pour l'URL
+        const message = `Bonjour, je demande des informations sur le service de ${serviceTitle}.`;
+        waLink.href = `https://wa.me/22655757299?text=${encodeURIComponent(message)}`;
+      }
+    });
+  }
+});
+
+const counterObserver = new IntersectionObserver(entries => {
+  entries.forEach(e => {
+    if (!e.isIntersecting) return;
+    const el = e.target;
+    counterObserver.unobserve(el);
+    const target = parseInt(el.dataset.target, 10);
+    const suffix = el.dataset.suffix || '';
+    const dur = 1800;
+    const t0 = performance.now();
+    function tick(now){
+      const p = Math.min((now - t0) / dur, 1);
+      const eased = 1 - Math.pow(1 - p, 3); // easeOutCubic
+      el.textContent = Math.round(target * eased).toLocaleString('fr-FR') + suffix;
+      if (p < 1) requestAnimationFrame(tick);
+    }
+    requestAnimationFrame(tick);
+  });
+}, { threshold:.4 });
+
+function observeCounters(){
+  document.querySelectorAll('.counter').forEach(el => counterObserver.observe(el));
+}
+
+/* ------------------------------------------------------------
+   11. INTERACTIONS — Navbar, bouton haut, formulaire, année
+   ------------------------------------------------------------ */
+const nav = document.getElementById('mainNav');
+window.addEventListener('scroll', () => {
+  nav.classList.toggle('scrolled', window.scrollY > 40);
+  document.getElementById('fabTop').classList.toggle('show', window.scrollY > 600);
+}, { passive:true });
+
+document.getElementById('fabTop').addEventListener('click', () => window.scrollTo({ top:0, behavior:'smooth' }));
+
+document.getElementById('year').textContent = new Date().getFullYear();
+
+// Formulaire de contact : validation + simulation d'envoi
+document.getElementById('contactForm').addEventListener('submit', function(e){
+  e.preventDefault();
+  const form = this;
+  if (!form.checkValidity()){
+    form.classList.add('was-validated');
+    return;
+  }
+  const btn = form.querySelector('button[type="submit"]');
+  const original = btn.innerHTML;
+  btn.disabled = true;
+  btn.innerHTML = '<span class="spinner-border spinner-border-sm me-2"></span>Envoi en cours…';
+  setTimeout(() => {
+    btn.disabled = false;
+    btn.innerHTML = original;
+    form.classList.remove('was-validated');
+    form.reset();
+    document.getElementById('formSuccess').classList.remove('d-none');
+    document.getElementById('formSuccess').scrollIntoView({ behavior:'smooth', block:'center' });
+    setTimeout(() => document.getElementById('formSuccess').classList.add('d-none'), 6000);
+  }, 1400);
+});
+
+// Fermeture du menu mobile après clic sur un lien
+document.querySelectorAll('#navMenu a[data-route]').forEach(a =>
+  a.addEventListener('click', () => {
+    const menu = document.getElementById('navMenu');
+    if (menu.classList.contains('show')) bootstrap.Collapse.getOrCreateInstance(menu).hide();
+  }));
+
+/* ------------------------------------------------------------
+   12. DÉMARRAGE DE L'APPLICATION
+   ------------------------------------------------------------ */
+function appInit(){
+  renderServices();
+  renderDiagnostic();
+  renderGuideFilters();
+  renderGuides();
+  renderFaq();
+  renderHomeBlog();
+  renderBlog();
+  renderDlFilters();
+  renderDownloads();
+  navigate();
+  window.addEventListener('hashchange', navigate);
+}
+document.addEventListener('DOMContentLoaded', appInit);
+document.addEventListener('DOMContentLoaded', function () {
+    const contactForm = document.getElementById('contactForm');
+    const btnWhatsapp = document.querySelector('.btn-wa');
+
+    // Fonction pour récupérer les données du formulaire
+    function getFormData() {
+        return {
+            nom: document.getElementById('cfNom').value.trim(),
+            email: document.getElementById('cfEmail').value.trim(),
+            tel: document.getElementById('cfTel').value.trim(),
+            service: document.getElementById('cfService').value,
+            message: document.getElementById('cfMsg').value.trim()
+        };
+    }
+
+    // 1. Gestion du bouton WhatsApp avec message dynamique
+    if (btnWhatsapp) {
+        btnWhatsapp.addEventListener('click', function (e) {
+            e.preventDefault();
+
+            const data = getFormData();
+
+            if (!data.nom || !data.email || !data.service || !data.message) {
+                contactForm.classList.add('was-validated');
+                alert('Veuillez remplir tous les champs obligatoires avant de contacter via WhatsApp.');
+                return;
+            }
+
+            let text = `Bonjour, je souhaite une assistance.%0A%0A`;
+            text += `*Nom* : ${encodeURIComponent(data.nom)}%0A`;
+            text += `*Email* : ${encodeURIComponent(data.email)}%0A`;
+            if (data.tel) text += `*Téléphone* : ${encodeURIComponent(data.tel)}%0A`;
+            text += `*Service* : ${encodeURIComponent(data.service)}%0A`;
+            text += `*Message* : ${encodeURIComponent(data.message)}`;
+
+            const phoneNum = "22655757299";
+            const waUrl = `https://wa.me/${phoneNum}?text=${text}`;
+            window.open(waUrl, '_blank');
+        });
+    }
+
+    // 2. Gestion de l'envoi d'e-mail vers votre adresse
+    contactForm.addEventListener('submit', function (e) {
+        e.preventDefault();
+
+        if (!contactForm.checkValidity()) {
+            contactForm.classList.add('was-validated');
+            return;
+        }
+
+        const data = getFormData();
+
+        let mailSubject = encodeURIComponent(`Demande de service : ${data.service}`);
+        let mailBody = encodeURIComponent(
+            `Nom : ${data.nom}\n` +
+            `Email client : ${data.email}\n` +
+            `Téléphone : ${data.tel || 'Non renseigné'}\n` +
+            `Service : ${data.service}\n\n` +
+            `Message :\n${data.message}`
+        );
+
+        // Envoi direct vers votre adresse e-mail
+        window.location.href = `mailto:lamiendonaldo179@gmail.com?subject=${mailSubject}&body=${mailBody}`;
+
+        const successAlert = document.getElementById('formSuccess');
+        if (successAlert) {
+            successAlert.classList.remove('d-none');
+        }
+    });
+});
+</script>
+</body>
+</html>
