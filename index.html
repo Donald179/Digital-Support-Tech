@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="fr">
 <head>
-     <!-- Google tag (gtag.js) -->
+  <!-- Google tag (gtag.js) -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-2698CRZHFC"></script>
 <script>
   window.dataLayer = window.dataLayer || [];
@@ -583,34 +583,28 @@ a:focus-visible,button:focus-visible,input:focus-visible,textarea:focus-visible,
   *,*::before,*::after{animation-duration:.01ms!important;transition-duration:.01ms!important}
   .reveal,.reveal-left,.reveal-right,.reveal-zoom{opacity:1;transform:none}
 }
+/* ============ AJUSTEMENTS NAVIGATION MOBILE ============ */
+@media (max-width: 991.98px) {
+  .navbar-dst .navbar-collapse {
+    background: rgba(255, 255, 255, 0.98);
+    border-radius: var(--radius);
+    padding: 1.2rem;
+    box-shadow: var(--shadow-lg);
+    margin-top: 0.8rem;
+    backdrop-filter: blur(16px);
+    -webkit-backdrop-filter: blur(16px);
+    border: 1px solid var(--line);
+  }
+  .navbar-dst .navbar-nav .nav-link {
+    padding: 0.7rem 1rem;
+    margin: 0.15rem 0;
+    font-size: 1rem;
+  }
+}
 </style>
 </head>
 
 <body>
-  <!-- Chariow Widget -->
-<div id="chariow-widget" data-product-id="prd_0r8hf7e2"
-    data-store-domain="dejnsyvg.mychariow.shop"
-    data-style="tap"
-    data-border-style="rounded"
-    data-cta-width="xs"
-    data-cta-animation="none"
-    data-locale="en"
-    data-primary-color="#FFCC00"
-    data-background-color="#ffffff"
-    data-custom-cta-text="Profiter de l'offre"></div>
-<script>
-(function() {
-  var script = document.createElement('script');
-  script.src = 'https://js.chariowcdn.com/v1/widget.min.js';
-  script.async = true;
-  document.head.appendChild(script);
-
-  var link = document.createElement('link');
-  link.rel = 'stylesheet';
-  link.href = 'https://js.chariowcdn.com/v1/widget.min.css';
-  document.head.appendChild(link);
-})();
-</script>
 <a class="skip-link" href="#main-content">Aller au contenu principal</a>
 
 <!-- ============================================================
@@ -735,6 +729,31 @@ a:focus-visible,button:focus-visible,input:focus-visible,textarea:focus-visible,
       </div>
     </div>
   </div>
+  
+    <!-- Chariow Widget -->
+<div id="chariow-widget" data-product-id="prd_0r8hf7e2"
+    data-store-domain="dejnsyvg.mychariow.shop"
+    data-style="tap"
+    data-border-style="rounded"
+    data-cta-width="xs"
+    data-cta-animation="none"
+    data-locale="en"
+    data-primary-color="#FFCC00"
+    data-background-color="#ffffff"
+    data-custom-cta-text="Profiter de l'offre"></div>
+<script>
+(function() {
+  var script = document.createElement('script');
+  script.src = 'https://js.chariowcdn.com/v1/widget.min.js';
+  script.async = true;
+  document.head.appendChild(script);
+
+  var link = document.createElement('link');
+  link.rel = 'stylesheet';
+  link.href = 'https://js.chariowcdn.com/v1/widget.min.css';
+  document.head.appendChild(link);
+})();
+</script>
 
   <!-- APERÇU SERVICES -->
   <div class="section">
@@ -2024,13 +2043,27 @@ document.getElementById('contactForm').addEventListener('submit', function(e){
   }, 1400);
 });
 
-// Fermeture du menu mobile après clic sur un lien
-document.querySelectorAll('#navMenu a[data-route]').forEach(a =>
-  a.addEventListener('click', () => {
-    const menu = document.getElementById('navMenu');
-    if (menu.classList.contains('show')) bootstrap.Collapse.getOrCreateInstance(menu).hide();
-  }));
+/* ============================================================
+   DIGITAL SUPPORT TECH — Application JavaScript (ES6)
+   ============================================================ */
+'use strict';
 
+// --- FERMETURE AUTOMATIQUE DU MENU MOBILE APRÈS CLIC ---
+document.addEventListener('DOMContentLoaded', () => {
+  const navLinks = document.querySelectorAll('.navbar-nav .nav-link, .navbar-brand');
+  const navCollapse = document.getElementById('navMenu');
+
+  if (navCollapse) {
+    navLinks.forEach(link => {
+      link.addEventListener('click', () => {
+        const bsCollapse = bootstrap.Collapse.getInstance(navCollapse);
+        if (bsCollapse && navCollapse.classList.contains('show')) {
+          bsCollapse.hide();
+        }
+      });
+    });
+  }
+});
 /* ------------------------------------------------------------
    12. DÉMARRAGE DE L'APPLICATION
    ------------------------------------------------------------ */
